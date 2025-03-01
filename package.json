@@ -1,0 +1,41 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "alejandrov44 portfolio",
+  "author": "alejandrov44",
+  "license": "MIT",
+  "homepage": "https://github.com/alejandrov44/portfolio",
+  "bugs": {
+    "url": "https://github.com/alejandrov44/portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alejandrov44/eslint-config.git"
+  },
+  "main": "index.ts",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rm -rf node_modules && rm package-lock.json"
+  },
+  "dependencies": {
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "dotenv": "^16.4.7",
+    "next": "^15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-vertical-timeline-component": "^3.6.0",
+    "typescript": "^5.7.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+.contact-container {
+  padding: 100px 20px;
+  background-color: #141414;
+  color: #e6e6e6;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.linkedin-badge-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #e6e6e6;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.badge-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.badge-content {
+  text-align: left;
+}
+
+.badge-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+.badge-title {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #aaa;
+}
+
+.badge-description {
+  font-size: 0.85rem;
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.badge-company {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.badge-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0077b5;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.badge-link:hover {
+  background-color: #005983;
+}
+
+.linkedin-icon {
+  margin-right: 5px;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin: 20px 0 30px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #1e1e1e;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(214, 43, 43, 0.6);
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #d62b2b;
+}
+
+.contact-link {
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-fun {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e6e6e6;
+}
+
+.coffee-icon {
+  font-size: 2rem;
+  color: #ff9900;
+  animation: swing 1s infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+}
