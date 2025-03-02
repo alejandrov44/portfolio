@@ -1,6 +1,11 @@
 import { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+const repoName = "portfolio";
+
 const nextConfig = {
+  output: "export",
+  basePath: isProd ? `/${repoName}` : "",
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
   pageExtensions: ["tsx", "mdx"],
