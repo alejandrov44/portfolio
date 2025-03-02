@@ -1,7 +1,7 @@
 "use client";
 
 import React, { JSX, useEffect, useState } from "react";
-import "./Projects.css";
+import "./projects.css";
 import { Project } from "@/interfaces";
 import { getProjects } from "@/queries/getProjects";
 import {
