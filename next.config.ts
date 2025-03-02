@@ -1,5 +1,6 @@
 import { NextConfig } from "next";
 
+console.log(process.env.NODE_ENV);
 const isProd = process.env.NODE_ENV === "production";
 const repoName = "portfolio";
 
