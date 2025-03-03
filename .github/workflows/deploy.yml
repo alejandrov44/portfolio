@@ -31,6 +31,11 @@ jobs:
         with:
           node-version-file: .node-version
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          static_site_generator: next
+
       - name: Restore cache
         uses: actions/cache@v4
         with:
@@ -43,11 +48,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build and Export with Next.js
+      - name: Build with Next.js
         run: npm run build
-
-      - name: Add .nojekyll
-        run: touch out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
