@@ -6,8 +6,12 @@ export default (phase: string) => {
   const isDev = phase === PHASE_DEVELOPMENT_SERVER;
 
   const nextConfig = {
+    output: "export",
     basePath: isDev ? undefined : `/${repoName}`,
-    assetPrefix: isDev ? undefined : `/${repoName}`,
+    assetPrefix: isDev ? undefined : `/${repoName}/`,
+    images: {
+      unoptimized: true,
+    },
     eslint: { ignoreDuringBuilds: true },
     typescript: { ignoreBuildErrors: true },
     pageExtensions: ["tsx", "mdx"],
