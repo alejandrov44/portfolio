@@ -1,14 +1,14 @@
 import { NextConfig } from "next";
 import { PHASE_DEVELOPMENT_SERVER } from "next/constants";
+
 const repoName = "portfolio";
 
 export default (phase: string) => {
   const isDev = phase === PHASE_DEVELOPMENT_SERVER;
 
   const nextConfig = {
-    output: "export",
     basePath: isDev ? undefined : `/${repoName}`,
-    assetPrefix: isDev ? undefined : `/${repoName}/`,
+    assetPrefix: isDev ? undefined : `/${repoName}`,
     images: {
       unoptimized: true,
     },

@@ -2,13 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import HomeIcon from "@/images/icons/home";
 import ProfessionalIcon from "@/images/icons/professional";
 import SkillsIcon from "@/images/icons/skills";
 import ProjectsIcon from "@/images/icons/projects";
-import HireMeIcon from "@/images/icons/hire-me";
+import pageLogo from "@/images/logos/logo.png";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
       <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
         <div className="navbar-left">
           <Link href="/" className="navbar-logo">
-            <img src="/logo.png" alt="Page Logo" />
+            <Image src={pageLogo} alt="Page Logo" />
           </Link>
           <ul className="navbar-links">
             <li>
@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
       {/* Sidebar (only visible on mobile) */}
       <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
         <div className="sidebar-logo">
-          <img src="/logo.jpg" alt="Page Logo" />
+          <Image src={pageLogo} alt="Page Logo" />
         </div>
         <ul>
           <li>

@@ -1,15 +1,17 @@
 import React from "react";
 import "./HireMe.css";
+import Image from "next/image";
 import EnvelopeIcon from "@/images/icons/envelope";
 import TelephoneIcon from "@/images/icons/telephone";
 import CoffeeIcon from "@/images/icons/coffee";
 import LinkdinIcon from "@/images/icons/linkdin";
+import profilePic from "@/images/profilePic.jpg";
 
 const ContactMe: React.FC = () => {
   return (
     <div className="contact-container">
       <div className="linkedin-badge-custom">
-        <img src="/profilePic.jpg" alt="Alejandro Viana" className="badge-avatar" />
+        <Image src={profilePic} alt="Alejandro Viana" className="badge-avatar" />
         <div className="badge-content">
           <h3 className="badge-name">Alejandro Viana</h3>
           <p className="badge-title">Software Engineer</p>
