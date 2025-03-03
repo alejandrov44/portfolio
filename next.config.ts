@@ -7,7 +7,7 @@ const repoName = "portfolio";
 const nextConfig = {
   output: "export",
   basePath: isProd ? `/${repoName}` : "",
-  assetPrefix: isProd ? `/${repoName}/` : "",
+  assetPrefix: isProd ? `/${repoName}` : "",
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
   pageExtensions: ["tsx", "mdx"],
