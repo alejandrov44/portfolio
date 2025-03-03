@@ -1,44 +1,44 @@
 import { NextConfig } from "next";
-
-console.log(process.env.NODE_ENV);
-const isProd = process.env.NODE_ENV === "production";
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants";
 const repoName = "portfolio";
 
-const nextConfig = {
-  output: "export",
-  basePath: isProd ? `/${repoName}` : "",
-  assetPrefix: isProd ? `/${repoName}` : "",
-  eslint: { ignoreDuringBuilds: true },
-  typescript: { ignoreBuildErrors: true },
-  pageExtensions: ["tsx", "mdx"],
-  experimental: {
-    typedRoutes: true,
-  },
-  async headers() {
-    return [
-      {
-        source: "/(.*)",
-        headers: [
-          {
-            key: "Strict-Transport-Security",
-            value: "max-age=31536000; includeSubDomains; preload",
-          },
-          {
-            key: "X-Frame-Options",
-            value: "DENY",
-          },
-          {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-          {
-            key: "Referrer-Policy",
-            value: "strict-origin-when-cross-origin",
-          },
-        ],
-      },
-    ];
-  },
-} satisfies NextConfig;
+export default (phase: string) => {
+  const isDev = phase === PHASE_DEVELOPMENT_SERVER;
 
-export default nextConfig;
+  const nextConfig = {
+    basePath: isDev ? undefined : `/${repoName}`,
+    assetPrefix: isDev ? undefined : `/${repoName}`,
+    eslint: { ignoreDuringBuilds: true },
+    typescript: { ignoreBuildErrors: true },
+    pageExtensions: ["tsx", "mdx"],
+    experimental: {
+      typedRoutes: true,
+    },
+    async headers() {
+      return [
+        {
+          source: "/(.*)",
+          headers: [
+            {
+              key: "Strict-Transport-Security",
+              value: "max-age=31536000; includeSubDomains; preload",
+            },
+            {
+              key: "X-Frame-Options",
+              value: "DENY",
+            },
+            {
+              key: "X-Content-Type-Options",
+              value: "nosniff",
+            },
+            {
+              key: "Referrer-Policy",
+              value: "strict-origin-when-cross-origin",
+            },
+          ],
+        },
+      ];
+    },
+  } satisfies NextConfig;
+  return nextConfig;
+};
