@@ -53,6 +53,50 @@
   color: #e50914;
 }
 
+.github-stars-button {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .github-stars-button {
+    display: flex;
+  }
+}
+
+.github-stars-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.375rem;
+  background-color: rgb(44, 44, 44);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.9);
+  transition-property: background-color;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.github-stars-link:hover {
+  background-color: rgb(60, 60, 60);
+}
+
+.github-stars-number {
+  display: inline-flex;
+  height: 1.25rem;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-weight: 500;
+}
+
 /* Profile Icon */
 .profile-icon {
   width: 30px;

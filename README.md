@@ -1,4 +1,4 @@
-## 🌟 alejandrov44 Portfolio 🌟 -
+## 🌟 alejandrov44 Portfolio 🌟 - https://alejandrov44.github.io/portfolio/
 
 Welcome to my personal portfolio project! 🚀 This website showcases my work, skills, and experiences in web development.
 
@@ -16,7 +16,7 @@ It's designed to be lightweight, customizable, and professional while maintainin
 This portfolio is built with love and:
 
 - ⚛️ **Next.js** (Frontend)
-- ☁️ **---** (Hosting and CDN)
+- ☁️ **TODO** (Hosting and CDN)
 - 🖌️ **Pure CSS** (Styling)
 - 🧩 **Other Cool Tools**: GitHub Actions
 
@@ -61,6 +61,6 @@ This project is licensed under the MIT License. Feel free to use it, modify it, 
 
 ## 📧 Contact Me
 
-- 💼 [Portfolio Website](https://-.com)
-- 🔗 [LinkedIn](https://uk.linkedin.com/in/sumanth-samala-82431161)
+- 💼 [Portfolio Website](https://alejandrov44.github.io/portfolio/)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/alejandro-viana/)
 - 📧 [Discord](https://discord.gg/yGMknyc9)

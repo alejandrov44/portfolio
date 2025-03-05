@@ -12,8 +12,8 @@ const LinkdinIcon = ({ alt, className = "" }: LinkdinIconProps) => {
       fill="currentColor"
       strokeWidth="0"
       viewBox="0 0 448 512"
-      height="1em"
-      width="1em"
+      height="1.5em"
+      width="1.5em"
       xmlns="http://www.w3.org/2000/svg"
       aria-label={alt}
       className={className}>

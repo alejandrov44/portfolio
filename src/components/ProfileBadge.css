@@ -7,47 +7,46 @@
 }
 
 .linkedin-badge-custom {
-  display: flex;
   align-items: center;
   justify-content: center;
   background: #222;
   border-radius: 8px;
-  padding: 15px 20px;
+  padding: 15px 15px;
   margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   color: #e6e6e6;
-  max-width: 350px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
 .badge-avatar {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  margin-right: 25px;
+  margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .badge-content {
-  text-align: left;
+  text-align: center;
 }
 
 .badge-name {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin: 0;
   color: #fff;
 }
 
 .badge-title {
-  font-size: 0.9rem;
-  margin: 0;
+  font-size: 1.1rem;
+  margin: 5px 0;
   color: #aaa;
 }
 
 .badge-description {
   font-size: 0.85rem;
-  margin: 5px 0;
+  margin: 10px 0;
   color: #ccc;
 }
 
@@ -74,6 +73,50 @@
 }
 
 .linkedin-icon {
+  margin-right: 5px;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: grey; /* Darker shade for hover */
+}
+
+.download-icon {
+  margin-right: 5px;
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0d1117;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: grey; /* Darker shade for hover */
+}
+
+.github-icon {
   margin-right: 5px;
 }
 

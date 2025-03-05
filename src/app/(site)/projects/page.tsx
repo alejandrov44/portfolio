@@ -24,11 +24,11 @@ import {
 } from "@/images/icons/skills/index";
 
 const techIcons: { [key: string]: JSX.Element } = {
-  HTML5: <WebsiteIcon alt={"Website Icon"} />,
-  CSS3: <WebsiteIcon alt={"Website Icon"} />,
-  React: <ReactIcon alt={"React Icon"} />,
-  "Next.js": <NextJsIcon alt={"NextJs Icon"} />,
-  "Node.js": <NodeJsIcon alt={"NodeJs Icon"} />,
+  HTML5: <WebsiteIcon alt="Website Icon" />,
+  CSS3: <WebsiteIcon alt="Website Icon" />,
+  React: <ReactIcon alt="React Icon" />,
+  "Next.js": <NextJsIcon alt="NextJs Icon" />,
+  "Node.js": <NodeJsIcon alt="NodeJs Icon" />,
 };
 
 const Projects: React.FC = () => {

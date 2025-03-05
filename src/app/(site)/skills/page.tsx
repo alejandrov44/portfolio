@@ -24,22 +24,22 @@ import {
 } from "@/images/icons/skills/index";
 
 const iconMap: { [key: string]: JSX.Element } = {
-  aws: <AwsIcon alt={"AWS Icon"} />,
-  test: <TestIcon alt={"Test Icon"} />,
-  node: <NodeJsIcon alt={"Node Icon"} />,
-  react: <ReactIcon alt={"React Icon"} />,
-  mysql: <MySQLIcon alt={"MySQL Icon"} />,
-  website: <WebsiteIcon alt={"Website Icon"} />,
-  docker: <DockerIcon alt={"Docker Icon"} />,
-  appium: <AppiumIcon alt={"Appium Icon"} />,
-  github: <GithubIcon alt={"Github Icon"} />,
-  gitlab: <GitlabIcon alt={"Gitlab Icon"} />,
-  nextjs: <NextJsIcon alt={"NextJs Icon"} />,
-  python: <PythonIcon alt={"Python Icon"} />,
-  prisma: <PrismaIcon alt={"Prisma Icon"} />,
-  javascript: <JavascriptIcon alt={"Javascript Icon"} />,
-  typescript: <TypescriptIcon alt={"Typescript Icon"} />,
-  postgresql: <PostgreSQLIcon alt={"PostgreSQL Icon"} />,
+  aws: <AwsIcon alt="AWS Icon" />,
+  test: <TestIcon alt="Test Icon" />,
+  node: <NodeJsIcon alt="Node Icon" />,
+  react: <ReactIcon alt="React Icon" />,
+  mysql: <MySQLIcon alt="MySQL Icon" />,
+  website: <WebsiteIcon alt="Website Icon" />,
+  docker: <DockerIcon alt="Docker Icon" />,
+  appium: <AppiumIcon alt="Appium Icon" />,
+  github: <GithubIcon alt="Github Icon" />,
+  gitlab: <GitlabIcon alt="Gitlab Icon" />,
+  nextjs: <NextJsIcon alt="NextJs Icon" />,
+  python: <PythonIcon alt="Python Icon" />,
+  prisma: <PrismaIcon alt="Prisma Icon" />,
+  javascript: <JavascriptIcon alt="Javascript Icon" />,
+  typescript: <TypescriptIcon alt="Typescript Icon" />,
+  postgresql: <PostgreSQLIcon alt="PostgreSQL Icon" />,
 };
 
 const Skills: React.FC = () => {
@@ -70,7 +70,7 @@ const Skills: React.FC = () => {
           <div className="skills-grid">
             {skillsByCategory[category].map((skill: any, idx: number) => (
               <div key={idx} className="skill-card">
-                <div className="icon">{iconMap[skill.icon] || <ReactIcon alt={"React Icon"} />}</div>
+                <div className="icon">{iconMap[skill.icon] || <ReactIcon alt="React Icon" />}</div>
                 <h3 className="skill-name">
                   {skill.name.split("").map((letter: any, i: number) => (
                     <span key={i} className="letter" style={{ animationDelay: `${i * 0.05}s` }}>

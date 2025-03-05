@@ -11,19 +11,7 @@ const timelineItems: TimelineItem[] = [
       "Multi repo infrastructure written entirely with Typescript in NodeJS.",
       "Using the CI from Github to launch automation tests, and creating a reporting system on Slack",
     ],
-    dateRange: "Apr 2022 - Act",
-  },
-  {
-    name: "Tiendeo",
-    timelineType: "work",
-    title: "PHP developer",
-    techStack: "PHP, Synfony, Crawling, Proxys, Jenkins",
-    summaryPoints: [
-      "Creation of bots in PHP Synfony.",
-      "Experience as a crawler, handling requests to webs and api's, and experimenting with different methods of sending information such as JSON.",
-      "Experience developing with PHP symfony framework, bots managed with Doquer and Jenkins.",
-    ],
-    dateRange: "Apr 2021 - Apr 2022",
+    dateRange: "Apr 2022 - Now",
   },
   {
     name: "VIU - Valencia International University",
@@ -37,6 +25,18 @@ const timelineItems: TimelineItem[] = [
       "Optimized Lighthouse score, boosting application performance.",
     ],
     dateRange: "Oct 2022 - Jun 2023",
+  },
+  {
+    name: "Tiendeo",
+    timelineType: "work",
+    title: "PHP developer",
+    techStack: "PHP, Synfony, Crawling, Proxys, Jenkins",
+    summaryPoints: [
+      "Creation of bots in PHP Synfony.",
+      "Experience as a crawler, handling requests to webs and api's, and experimenting with different methods of sending information such as JSON.",
+      "Experience developing with PHP symfony framework, bots managed with Doquer and Jenkins.",
+    ],
+    dateRange: "Apr 2021 - Apr 2022",
   },
   {
     name: "La Salle BCN, Ramon Llull University",
