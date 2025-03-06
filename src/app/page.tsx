@@ -2,10 +2,6 @@ import { Metadata } from "next";
 import ProfileBadge from "@/components/ProfileBadge";
 import EnvelopeIcon from "@/images/icons/envelope";
 
-export const metadata: Metadata = {
-  title: "Portfolio Hire Me",
-};
-
 export default function Home() {
   return (
     <div className="contact-container">

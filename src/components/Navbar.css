@@ -2,44 +2,42 @@
 
 /* Main Navbar Styling */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: #fff;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-image: linear-gradient(180deg, rgb(0 0 1 / 90%) 10%, transparent 100%);
-  padding: 20px;
-  z-index: 3;
+  padding: 10px 0;
   transition: background-color 0.3s ease;
+  z-index: 3;
+  background-image: linear-gradient(180deg, rgb(0 0 1 / 90%) 10%, transparent 100%);
 }
 
 .navbar.scrolled {
   background-color: #141414;
 }
 
-.navbar-left,
-.navbar-right {
+.navbar-container {
   display: flex;
+  justify-content: center;
   align-items: center;
+  max-width: 1200px;
+  padding: 20px 0;
+  margin: 0 auto;
 }
 
 .navbar-logo img {
-  height: 50px;
-  width: 50px;
-  margin-left: 60px;
-  margin-right: 80px;
-  margin-top: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
 /* Navbar Links */
 .navbar-links {
-  display: flex;
   list-style: none;
-  gap: 20px;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-links li a {
@@ -47,6 +45,7 @@
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
+  margin: 0 15px;
 }
 
 .navbar-links li a:hover {
@@ -54,19 +53,15 @@
 }
 
 .github-stars-button {
-  display: none;
+  display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-@media (min-width: 768px) {
-  .github-stars-button {
-    display: flex;
-  }
+  margin-left: 20px;
 }
 
 .github-stars-link {
   display: inline-flex;
+  text-decoration: none;
   align-items: center;
   gap: 0.5rem;
   border-radius: 0.375rem;
@@ -97,16 +92,6 @@
   font-weight: 500;
 }
 
-/* Profile Icon */
-.profile-icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  transition: transform 0.3s;
-  margin-right: 2rem;
-  cursor: pointer;
-}
-
 /* Hide the hamburger and sidebar in desktop view */
 .hamburger,
 .sidebar-overlay,
@@ -116,13 +101,12 @@
 
 /* Mobile-specific styling */
 @media (max-width: 768px) {
-  .navbar-logo img {
-    height: 20px;
-    margin-right: auto;
+  .github-stars-button {
+    margin-right: 20px;
   }
-  .profile-icon {
-    width: 24px;
-    height: 24px;
+
+  .navbar-logo img {
+    margin-right: 20px;
   }
 
   /* Hide Navbar Links in Mobile */
@@ -142,6 +126,12 @@
     background-color: #fff;
     margin: 4px;
     transition: 0.3s;
+  }
+
+  /* Close button inside the sidebar */
+  .hamburger-icon {
+    font-size: 1.5rem;
+    margin-right: 5px;
   }
 
   /* Sidebar Overlay */
@@ -166,7 +156,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 70%;
+    width: auto;
     background-color: #141414;
     color: #fff;
     display: flex;
@@ -176,6 +166,9 @@
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .sidebar.open {
@@ -183,7 +176,6 @@
   }
 
   .sidebar-logo img {
-    height: 30px;
     margin-bottom: 20px;
   }
 
@@ -206,18 +198,5 @@
     display: flex;
     align-items: center;
     gap: 8px;
-  }
-
-  /* Close button inside the sidebar */
-  .hamburger-icon {
-    font-size: 1.5rem;
-    margin-right: 5px;
-  }
-
-  /* Sidebar adjustments */
-  .sidebar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
