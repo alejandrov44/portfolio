@@ -11,12 +11,14 @@ import profilePic from "@/images/profilePic-small.webp";
 const ProfileBadge: React.FC = () => {
   return (
     <div className="linkedin-badge-custom">
-      <Image src={profilePic} alt="Alejandro Viana" className="badge-avatar" />
+      <Image src={profilePic} alt="Alejandro Viana" className="badge-avatar" priority={true} loading="eager" />
       <div className="badge-content">
         <h3 className="badge-name">Alejandro Viana</h3>
         <p className="badge-title">Software Engineer</p>
-        <p className="badge-description">Full Stack skilled in Node.js and Python</p>
-        <p className="badge-description">With 3+ years in development</p>
+        <p className="badge-description">
+          Dynamic and persevering Software Engineer with 3+ years in development <br></br>
+          across many projects, skilled in Node.js and Python.
+        </p>
         <p className="badge-company">Shopfully | LaSalle Universtity</p>
         <div>
           <a href="https://www.linkedin.com/in/alejandro-viana/" target="_blank" rel="noopener noreferrer" className="badge-link">
