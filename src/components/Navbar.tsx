@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
               <Link href="/">Contact Me</Link>
             </li>
             <li>
-              <Link href="/work-experience">Professional</Link>
+              <Link href="/experience-timeline">Professional</Link>
             </li>
             <li>
               <Link href="/skills">Skills</Link>
@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link href="/work-experience" onClick={closeSidebar}>
+            <Link href="/experience-timeline" onClick={closeSidebar}>
               <ProfessionalIcon alt="Professional Icon" /> Professional
             </Link>
           </li>

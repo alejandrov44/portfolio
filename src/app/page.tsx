@@ -1,8 +1,7 @@
-import { Metadata } from "next";
 import ProfileBadge from "@/components/ProfileBadge";
 import EnvelopeIcon from "@/images/icons/envelope";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <div className="contact-container">
       <ProfileBadge />
@@ -22,4 +21,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;

@@ -6,7 +6,7 @@ import "react-vertical-timeline-component/style.min.css";
 import WorkIcon from "@/images/icons/work-experience/work";
 import SchoolIcon from "@/images/icons/work-experience/school";
 import StarIcon from "@/images/icons/work-experience/star";
-import "./work-experience.css";
+import "./experienceTimeline.css";
 import { TimelineItem } from "@/interfaces";
 import { getTimeline } from "@/queries/getWorkExperience";
 
@@ -22,7 +22,6 @@ const WorkExperience: React.FC = () => {
   }, []);
 
   if (!timeLineData) return <div>Loading...</div>;
-  console.log("🚀 ~ timeLineData:", timeLineData);
 
   return (
     <>
