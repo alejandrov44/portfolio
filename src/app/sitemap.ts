@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { url } from "@/utils/seo";
 
+export const dynamic = "force-static";
+
 const sitemap = (): MetadataRoute.Sitemap => {
   return [
     {
