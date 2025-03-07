@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { url } from "./seo";
+import { url } from "@/utils/seo";
 
 const sitemap = (): MetadataRoute.Sitemap => {
   return [
