@@ -1,7 +1,7 @@
 "use client";
 
 import React, { JSX, useEffect, useState } from "react";
-import "./skills.css";
+import "./Skills.css";
 import { getSkills } from "@/queries/getSkills";
 import { Skill } from "@/interfaces";
 import {

@@ -6,7 +6,7 @@ import "react-vertical-timeline-component/style.min.css";
 import WorkIcon from "@/images/icons/work-experience/work";
 import SchoolIcon from "@/images/icons/work-experience/school";
 import StarIcon from "@/images/icons/work-experience/star";
-import "./experienceTimeline.css";
+import "./ExperienceTimeline.css";
 import { TimelineItem } from "@/interfaces";
 import { getTimeline } from "@/queries/getWorkExperience";
 

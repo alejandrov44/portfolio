@@ -2,7 +2,7 @@
 
 import React, { JSX, useEffect, useState } from "react";
 import Image, { StaticImageData } from "next/image";
-import "./projects.css";
+import "./Projects.css";
 import { Project } from "@/interfaces";
 import { getProjects } from "@/queries/getProjects";
 import portfolioProjectImage from "@/images/projects/portfolio.webp";
