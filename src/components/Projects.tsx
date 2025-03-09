@@ -3,7 +3,7 @@
 import React, { JSX, useEffect, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import "./Projects.css";
-import { Project } from "@/interfaces";
+import { Project } from "@/queries/types";
 import { getProjects } from "@/queries/getProjects";
 import portfolioProjectImage from "@/images/projects/portfolio.webp";
 import {

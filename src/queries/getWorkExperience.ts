@@ -1,4 +1,4 @@
-import { TimelineItem } from "@/interfaces";
+import { TimelineItem } from "@/queries/types";
 
 const timelineItems: TimelineItem[] = [
   {

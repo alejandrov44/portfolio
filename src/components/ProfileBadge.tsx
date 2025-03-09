@@ -7,6 +7,7 @@ import LinkdinIcon from "@/images/icons/linkdin";
 import DownloadIcon from "@/images/icons/download";
 import GithubIcon from "@/images/icons/github";
 import profilePic from "@/images/profilePic-small.webp";
+import { basePath } from "../../next.config";
 
 const ProfileBadge: React.FC = () => {
   return (
@@ -24,7 +25,7 @@ const ProfileBadge: React.FC = () => {
           <a href="https://www.linkedin.com/in/alejandro-viana/" target="_blank" rel="noopener noreferrer" className="badge-link">
             <LinkdinIcon className="linkedin-icon" alt="Linkdin Icon" /> View Profile
           </a>
-          <a href="https://www.linkedin.com/in/alejandro-viana/" target="_blank" rel="noopener noreferrer" className="download-button">
+          <a href={`${basePath}/files/AlejandroResume.pdf`} download="Curriculum_AlejandroViana.pdf" target="_blank" rel="noopener noreferrer" className="download-button">
             <DownloadIcon className="download-icon" alt="Download Icon" /> Download CV
           </a>
           <a href="https://github.com/alejandrov44" target="_blank" rel="noopener noreferrer" className="github-button">

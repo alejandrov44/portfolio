@@ -1,14 +1,13 @@
+import environmentVariables from "@/utils/environments";
 import { NextConfig } from "next";
-import { PHASE_DEVELOPMENT_SERVER } from "next/constants";
 
-const repoName = "portfolio";
+export const basePath = new URL(environmentVariables.baseUrl).pathname.replace(/\/$/, "");
 
-export default (phase: string) => {
-  const isDev = phase === PHASE_DEVELOPMENT_SERVER;
-
+export default () => {
   const nextConfig = {
-    basePath: isDev ? undefined : `/${repoName}`,
-    assetPrefix: isDev ? undefined : `/${repoName}`,
+    basePath: basePath !== "/" ? basePath : "",
+    assetPrefix: basePath !== "/" ? basePath : "",
+    trailingSlash: true,
     images: {
       unoptimized: true,
     },

@@ -1,4 +1,4 @@
-import { Skill, SkillCategories } from "@/interfaces";
+import { Skill, SkillCategories } from "@/queries/types";
 
 const Skills: Skill[] = [
   {

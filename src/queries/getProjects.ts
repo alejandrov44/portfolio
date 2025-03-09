@@ -1,4 +1,4 @@
-import { Project } from "@/interfaces";
+import { Project } from "@/queries/types";
 
 const Projects: Project[] = [
   {

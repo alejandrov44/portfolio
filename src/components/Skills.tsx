@@ -3,7 +3,7 @@
 import React, { JSX, useEffect, useState } from "react";
 import "./Skills.css";
 import { getSkills } from "@/queries/getSkills";
-import { Skill } from "@/interfaces";
+import { Skill } from "@/queries/types";
 import {
   TypescriptIcon,
   MySQLIcon,

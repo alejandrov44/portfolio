@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import environmentVariables from "./environments";
 
 const name = "Alejandro Viana";
 const title = `${name} - Portfolio`;
 const description = `An online portfolio website created by ${name}, open source with next.js`;
-export const url = "https://alejandrov44.github.io/portfolio";
+export const url = environmentVariables.baseUrl;
 
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(url),

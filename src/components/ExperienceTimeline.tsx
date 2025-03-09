@@ -7,7 +7,7 @@ import WorkIcon from "@/images/icons/work-experience/work";
 import SchoolIcon from "@/images/icons/work-experience/school";
 import StarIcon from "@/images/icons/work-experience/star";
 import "./ExperienceTimeline.css";
-import { TimelineItem } from "@/interfaces";
+import { TimelineItem } from "@/queries/types";
 import { getTimeline } from "@/queries/getWorkExperience";
 
 const WorkExperience: React.FC = () => {
