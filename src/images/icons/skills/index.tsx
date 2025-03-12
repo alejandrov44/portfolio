@@ -1,5 +1,6 @@
 import AppiumIcon from "./appium";
 import AwsIcon from "./aws";
+import CheerioIcon from "./cheerio";
 import DockerIcon from "./docker";
 import GithubIcon from "./github";
 import GitlabIcon from "./gitlab";
@@ -11,6 +12,7 @@ import PostgreSQLIcon from "./postgresql";
 import PrismaIcon from "./prisma";
 import PythonIcon from "./python";
 import ReactIcon from "./react";
+import SteamIcon from "./steam";
 import TestIcon from "./test";
 import TypescriptIcon from "./typescript";
 import WebsiteIcon from "./website";
@@ -32,4 +34,6 @@ export {
   PythonIcon,
   PrismaIcon,
   WebsiteIcon,
+  CheerioIcon,
+  SteamIcon,
 };

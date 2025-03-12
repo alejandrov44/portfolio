@@ -6,27 +6,12 @@ import "./Projects.css";
 import { Project } from "@/queries/types";
 import { getProjects } from "@/queries/getProjects";
 import portfolioProjectImage from "@/images/projects/portfolio.webp";
-import {
-  // TypescriptIcon,
-  // MySQLIcon,
-  // PostgreSQLIcon,
-  // JavascriptIcon,
-  // DockerIcon,
-  ReactIcon,
-  // AwsIcon,
-  // TestIcon,
-  // AppiumIcon,
-  // GithubIcon,
-  // GitlabIcon,
-  NodeJsIcon,
-  NextJsIcon,
-  // PythonIcon,
-  // PrismaIcon,
-  WebsiteIcon,
-} from "@/images/icons/skills/index";
+import freeGamesAlertsImage from "@/images/projects/free-games-alerts.webp";
+import { ReactIcon, NodeJsIcon, NextJsIcon, WebsiteIcon, CheerioIcon, SteamIcon } from "@/images/icons/skills/index";
 
 const projectImages: { [key: string]: StaticImageData } = {
   portfolio: portfolioProjectImage,
+  freeGamesAlerts: freeGamesAlertsImage,
 };
 
 const techIcons: { [key: string]: JSX.Element } = {
@@ -35,6 +20,9 @@ const techIcons: { [key: string]: JSX.Element } = {
   React: <ReactIcon alt="React Icon" />,
   "Next.js": <NextJsIcon alt="NextJs Icon" />,
   "Node.js": <NodeJsIcon alt="NodeJs Icon" />,
+  Crawling: <WebsiteIcon alt="Crawling Icon" />,
+  Cheerio: <CheerioIcon alt="Cheerio Icon" />,
+  "Steam API": <SteamIcon alt="Steam Icon" />,
 };
 
 const Projects: React.FC = () => {

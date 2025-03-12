@@ -20,9 +20,9 @@ const timelineItems: TimelineItem[] = [
     techStack:
       "Natural language processing, Convolutional neural networks (CNN), TensorFlow, Deep learning, Data science, Data analysis, Recurrent Neural Network (RNN), Optimization algorithms, Pandas, Mathematics, Python",
     summaryPoints: [
-      "👨‍⚕️ Developed chat and video consultation features for patient engagement.",
-      "Built an analytics dashboard, improving data insights for medical professionals.",
-      "Optimized Lighthouse score, boosting application performance.",
+      "Learning Python to be able to manage Tensorflow and Keras.",
+      "Use diferent types of IA: Supervised and Unsupervised Learning, Deep Learning or Reinforce Learning",
+      "Optimizing Algorithms to try to use always the most efficient ones.",
     ],
     dateRange: "Oct 2022 - Jun 2023",
   },

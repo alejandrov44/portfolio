@@ -17,9 +17,7 @@ const Navbar: React.FC = () => {
   const [stars, setStars] = useState<number | null>(null);
   const repo = "alejandrov44/portfolio";
 
-  const handleScroll = () => {
-    setIsScrolled(window.scrollY > 80);
-  };
+  const handleScroll = () => setIsScrolled(window.scrollY > 80);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -37,13 +35,9 @@ const Navbar: React.FC = () => {
     return count.toString();
   };
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+  const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
-  const closeSidebar = () => {
-    setIsSidebarOpen(false);
-  };
+  const closeSidebar = () => setIsSidebarOpen(false);
 
   return (
     <>

@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+import VerticalTimeline from "@/components/VerticalTimeline";
+import VerticalTimelineElement from "@/components/VerticalTimelineElement";
 import WorkIcon from "@/images/icons/work-experience/work";
 import SchoolIcon from "@/images/icons/work-experience/school";
 import StarIcon from "@/images/icons/work-experience/star";
@@ -36,18 +36,18 @@ const WorkExperience: React.FC = () => {
             contentStyle={
               item.timelineType === "work"
                 ? { background: index === 0 ? "rgb(33, 150, 243)" : "rgb(240, 240, 240)", color: "#fff" }
-                : { background: "rgb(254, 215, 123)", color: "#fff" } // Lighter red for education
+                : { background: "rgb(254, 215, 123)", color: "#fff" }
             }
             contentArrowStyle={
               item.timelineType === "work"
                 ? { borderRight: index === 0 ? "7px solid rgb(33, 150, 243)" : "7px solid rgb(240, 240, 240)" }
-                : { borderRight: "7px solid rgb(255, 202, 79)" }
+                : { borderRight: "7px solid rgb(254, 215, 123)" }
             }
             date={item.dateRange}
             iconStyle={
               item.timelineType === "work"
                 ? { background: "rgb(33, 150, 243)", color: "#fff" }
-                : { background: "rgb(255, 202, 79)", color: "#fff" } // Softer red for education icon
+                : { background: "rgb(255, 202, 79)", color: "#fff" }
             }
             icon={item.timelineType === "work" ? <WorkIcon alt="Work Icon" /> : <SchoolIcon alt="School Icon" />}>
             <div style={{ color: "black" }}>
