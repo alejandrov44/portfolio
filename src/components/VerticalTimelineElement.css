@@ -191,7 +191,7 @@
 .vertical-timeline-element-content .vertical-timeline-element-date {
   float: left;
   padding: 0.8em 0;
-  opacity: 0.7;
+  color: rgb(0, 0, 0);
 }
 .vertical-timeline-element-content-arrow {
   content: "";
@@ -240,8 +240,8 @@
     font-size: 1rem;
   }
   .vertical-timeline-element-content .vertical-timeline-element-date {
-    font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 16px;
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -263,6 +263,7 @@
     top: 6px;
     font-size: 16px;
     font-size: 1rem;
+    color: #ffffff;
   }
 
   .vertical-timeline--two-columns

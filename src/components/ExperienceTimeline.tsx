@@ -35,7 +35,7 @@ const WorkExperience: React.FC = () => {
             className={`vertical-timeline-element--${item.timelineType}`}
             contentStyle={
               item.timelineType === "work"
-                ? { background: index === 0 ? "rgb(33, 150, 243)" : "rgb(240, 240, 240)", color: "#fff" }
+                ? { background: index === 0 ? "rgb(117, 192, 254)" : "rgb(240, 240, 240)", color: "#fff" }
                 : { background: "rgb(254, 215, 123)", color: "#fff" }
             }
             contentArrowStyle={
@@ -55,7 +55,9 @@ const WorkExperience: React.FC = () => {
               <h4 className="vertical-timeline-element-subtitle">{item.title}</h4>
               <p className="vertical-timeline-element-tech">🔧 {item.techStack}</p>
               {item.summaryPoints.map((element, index) => (
-                <p key={index}>➡︎ {element}</p>
+                <p key={index}>
+                  <span style={{ color: "black" }}>➤</span> {element}
+                </p>
               ))}
             </div>
           </VerticalTimelineElement>

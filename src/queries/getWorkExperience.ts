@@ -7,7 +7,7 @@ const timelineItems: TimelineItem[] = [
     title: "QA Automation Engineer",
     techStack: "Node.js, Typescript, Playwright, WebdriverIO, Appium, Github, AWS",
     summaryPoints: [
-      "Developing the infrastructure that serves for the quality automation of both web and API's.",
+      "Developing the infrastructure that serves for the quality automation of all the tech stack web, mobile and API's.",
       "Multi repo infrastructure written entirely with Typescript in NodeJS.",
       "Using the CI from Github to launch automation tests, and creating a reporting system on Slack",
     ],
