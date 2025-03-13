@@ -17,8 +17,8 @@ const ProfileBadge: React.FC = () => {
         <h3 className="badge-name">Alejandro Viana</h3>
         <p className="badge-title">Software Engineer</p>
         <p className="badge-description">
-          Dynamic and persevering Software Engineer with 3+ years in development <br></br>
-          across many projects, skilled in Node.js and Python.
+          Dynamic and persevering Software Engineer with 3+ years in development across many projects, skilled in Node.js and Python.
+          <br></br>
         </p>
         <p className="badge-company">Shopfully | LaSalle Universtity</p>
         <div>
