@@ -1,4 +1,4 @@
-## 🌟 alejandrov44 Portfolio 🌟 - https://alejandrov44.github.io/portfolio/
+## My Portfolio - https://alejandrov44.pages.dev/
 
 Welcome to my personal portfolio project! 🚀 This website showcases my work, skills, and experiences in web development.
 
@@ -61,6 +61,6 @@ This project is licensed under the MIT License. Feel free to use it, modify it, 
 
 ## 📧 Contact Me
 
-- 💼 [Portfolio Website](https://alejandrov44.github.io/portfolio/)
+- 💼 [Portfolio Website](https://alejandrov44.pages.dev/)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/alejandro-viana/)
 - 📧 [Discord](https://discord.gg/yGMknyc9)
