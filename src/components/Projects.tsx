@@ -2,19 +2,16 @@
 
 import React, { JSX, useEffect, useState } from "react";
 import Image, { StaticImageData } from "next/image";
-import "./Projects.css";
+import "./projects.css";
 import { Project } from "@/queries/types";
-import { getProjects } from "@/queries/getProjects";
+import { getProjects } from "@/queries/get-projects";
 import portfolioProjectImage from "@/images/projects/portfolio.webp";
 import freeGamesAlertsImage from "@/images/projects/free-games-alerts.webp";
 import { ReactIcon, NodeJsIcon, NextJsIcon, WebsiteIcon, CheerioIcon, SteamIcon } from "@/images/icons/skills/index";
 
-const projectImages: { [key: string]: StaticImageData } = {
-  portfolio: portfolioProjectImage,
-  freeGamesAlerts: freeGamesAlertsImage,
-};
+const projectImages: Record<string, StaticImageData> = { portfolio: portfolioProjectImage, freeGamesAlerts: freeGamesAlertsImage };
 
-const techIcons: { [key: string]: JSX.Element } = {
+const techIcons: Record<string, JSX.Element> = {
   HTML5: <WebsiteIcon alt="Website Icon" />,
   CSS3: <WebsiteIcon alt="Website Icon" />,
   React: <ReactIcon alt="React Icon" />,
@@ -29,8 +26,8 @@ const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
 
   useEffect(() => {
-    async function fetchProjects() {
-      const data = await getProjects();
+    function fetchProjects() {
+      const data = getProjects();
       setProjects(data);
     }
 
@@ -49,9 +46,9 @@ const Projects: React.FC = () => {
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className="tech-used">
-                {project.techUsed.split(", ").map((tech, i) => (
-                  <span key={i} className="tech-badge">
-                    {techIcons[tech] || "🔧"} {tech}
+                {project.techUsed.split(", ").map((tech, index_) => (
+                  <span key={index_} className="tech-badge">
+                    {techIcons[tech]} {tech}
                   </span>
                 ))}
               </div>

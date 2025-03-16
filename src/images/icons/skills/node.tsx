@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface NodeJsIconProps {
+interface NodeJsIconProperties {
   alt: string;
   className?: string;
 }
 
-const NodeJsIcon = ({ alt, className = "" }: NodeJsIconProps) => {
+const NodeJsIcon = ({ alt, className = "" }: NodeJsIconProperties) => {
   return (
     <svg
       stroke="currentColor"

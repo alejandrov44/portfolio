@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
-
-interface AppiumIconProps {
+ 
+interface AppiumIconProperties {
   alt: string;
   className?: string;
 }
 
-const AppiumIcon = ({ alt, className = "" }: AppiumIconProps) => {
+const AppiumIcon = ({ alt, className = "" }: AppiumIconProperties) => {
   return (
     <svg
       stroke="currentColor"

@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface SteamIconProps {
+interface SteamIconProperties {
   alt: string;
   className?: string;
 }
 
-const SteamIcon = ({ alt, className = "" }: SteamIconProps) => {
+const SteamIcon = ({ alt, className = "" }: SteamIconProperties) => {
   return (
     <svg
       stroke="currentColor"

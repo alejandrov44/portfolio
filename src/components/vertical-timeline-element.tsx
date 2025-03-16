@@ -1,8 +1,8 @@
 import React, { CSSProperties } from "react";
 import { useInView } from "react-intersection-observer";
-import "./VerticalTimelineElement.css";
+import "./vertical-timeline-element.css";
 
-interface VerticalTimelineElementProps {
+interface VerticalTimelineElementProperties {
   children?: React.JSX.Element;
   className?: string;
   contentStyle?: CSSProperties;
@@ -12,32 +12,27 @@ interface VerticalTimelineElementProps {
   icon: React.JSX.Element;
 }
 
-const VerticalTimelineElement: React.FC<VerticalTimelineElementProps> = ({
-  children = undefined,
+const VerticalTimelineElement: React.FC<VerticalTimelineElementProperties> = ({
+  children,
   className = "",
-  contentStyle = undefined,
-  contentArrowStyle = undefined,
-  iconStyle = undefined,
+  contentStyle,
+  contentArrowStyle,
+  iconStyle,
   date = "",
-  icon = undefined,
+  icon,
 }) => {
-  const { ref, inView } = useInView({
-    rootMargin: "0px 0px -40px 0px",
-    triggerOnce: true,
-  });
+  const { ref, inView } = useInView({ rootMargin: "0px 0px -40px 0px", triggerOnce: true });
 
   let iconClassNames = `vertical-timeline-element-icon shadow-size-small`;
-  if (inView) iconClassNames += " bounce-in";
-  else iconClassNames += " is-hidden";
+  iconClassNames += inView ? " bounce-in" : " is-hidden";
 
   let textClassNames = `vertical-timeline-element-content`;
-  if (inView) textClassNames += " bounce-in";
-  else textClassNames += " is-hidden";
+  textClassNames += inView ? " bounce-in" : " is-hidden";
 
   return (
     <div
       ref={ref}
-      className={`${className} vertical-timeline-element ${!children ? "vertical-timeline-element--no-children" : ""}`}
+      className={`${className} vertical-timeline-element ${children ? "" : "vertical-timeline-element--no-children"}`}
       style={undefined}>
       <React.Fragment>
         <span style={iconStyle} className={iconClassNames}>

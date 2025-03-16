@@ -3,21 +3,18 @@ import { NextConfig } from "next";
 
 export const basePath = new URL(environmentVariables.baseUrl).pathname.replace(/\/$/, "");
 
-export default () => {
+const next = () => {
   const nextConfig = {
     output: "export",
-    basePath: basePath !== "/" ? basePath : "",
-    assetPrefix: basePath !== "/" ? basePath : "",
+    basePath: basePath === "/" ? "" : basePath,
+    assetPrefix: basePath === "/" ? "" : basePath,
     trailingSlash: true,
-    images: {
-      unoptimized: true,
-    },
+    images: { unoptimized: true },
     eslint: { ignoreDuringBuilds: true },
     typescript: { ignoreBuildErrors: true },
     pageExtensions: ["tsx", "mdx"],
-    experimental: {
-      typedRoutes: true,
-    },
+    experimental: { typedRoutes: true },
   } satisfies NextConfig;
   return nextConfig;
 };
+export default next;

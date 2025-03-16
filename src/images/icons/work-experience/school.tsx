@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface SchoolIconProps {
+interface SchoolIconProperties {
   alt: string;
   className?: string;
 }
 
-const SchoolIcon = ({ alt, className = "" }: SchoolIconProps) => {
+const SchoolIcon = ({ alt, className = "" }: SchoolIconProperties) => {
   return (
     <svg
       stroke="currentColor"

@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface TestIconProps {
+interface TestIconProperties {
   alt: string;
   className?: string;
 }
 
-const TestIcon = ({ alt, className = "" }: TestIconProps) => {
+const TestIcon = ({ alt, className = "" }: TestIconProperties) => {
   return (
     <svg
       stroke="currentColor"

@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
-
-interface AwsIconProps {
+ 
+interface AwsIconProperties {
   alt: string;
   className?: string;
 }
 
-const AwsIcon = ({ alt, className = "" }: AwsIconProps) => {
+const AwsIcon = ({ alt, className = "" }: AwsIconProperties) => {
   return (
     <svg
       stroke="currentColor"

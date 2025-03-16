@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface PostgreSQLIconProps {
+interface PostgreSQLIconProperties {
   alt: string;
   className?: string;
 }
 
-const PostgreSQLIcon = ({ alt, className = "" }: PostgreSQLIconProps) => {
+const PostgreSQLIcon = ({ alt, className = "" }: PostgreSQLIconProperties) => {
   return (
     <svg
       stroke="currentColor"

@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface MySQLIconProps {
+interface MySQLIconProperties {
   alt: string;
   className?: string;
 }
 
-const MySQLIcon = ({ alt, className = "" }: MySQLIconProps) => {
+const MySQLIcon = ({ alt, className = "" }: MySQLIconProperties) => {
   return (
     <svg
       stroke="currentColor"

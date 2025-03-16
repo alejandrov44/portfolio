@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface LinkdinIconProps {
+interface LinkdinIconProperties {
   alt: string;
   className?: string;
 }
 
-const LinkdinIcon = ({ alt, className = "" }: LinkdinIconProps) => {
+const LinkdinIcon = ({ alt, className = "" }: LinkdinIconProperties) => {
   return (
     <svg
       stroke="currentColor"

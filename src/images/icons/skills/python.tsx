@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface PythonIconProps {
+interface PythonIconProperties {
   alt: string;
   className?: string;
 }
 
-const PythonIcon = ({ alt, className = "" }: PythonIconProps) => {
+const PythonIcon = ({ alt, className = "" }: PythonIconProperties) => {
   return (
     <svg
       stroke="currentColor"

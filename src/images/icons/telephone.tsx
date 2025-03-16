@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface TelephoneIconProps {
+interface TelephoneIconProperties {
   alt: string;
   className?: string;
 }
 
-const TelephoneIcon = ({ alt, className = "" }: TelephoneIconProps) => {
+const TelephoneIcon = ({ alt, className = "" }: TelephoneIconProperties) => {
   return (
     <svg
       stroke="currentColor"

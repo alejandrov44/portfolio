@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import "./ProfileBadge.css";
+import "./profile-badge.css";
 import Image from "next/image";
 import LinkdinIcon from "@/images/icons/linkdin";
 import DownloadIcon from "@/images/icons/download";

@@ -1,39 +1,18 @@
-import AppiumIcon from "./appium";
-import AwsIcon from "./aws";
-import CheerioIcon from "./cheerio";
-import DockerIcon from "./docker";
-import GithubIcon from "./github";
-import GitlabIcon from "./gitlab";
-import JavascriptIcon from "./javascript";
-import MySQLIcon from "./mySql";
-import NextJsIcon from "./nextjs";
-import NodeJsIcon from "./node";
-import PostgreSQLIcon from "./postgresql";
-import PrismaIcon from "./prisma";
-import PythonIcon from "./python";
-import ReactIcon from "./react";
-import SteamIcon from "./steam";
-import TestIcon from "./test";
-import TypescriptIcon from "./typescript";
-import WebsiteIcon from "./website";
-
-export {
-  TypescriptIcon,
-  MySQLIcon,
-  PostgreSQLIcon,
-  JavascriptIcon,
-  DockerIcon,
-  ReactIcon,
-  AwsIcon,
-  TestIcon,
-  AppiumIcon,
-  GithubIcon,
-  GitlabIcon,
-  NodeJsIcon,
-  NextJsIcon,
-  PythonIcon,
-  PrismaIcon,
-  WebsiteIcon,
-  CheerioIcon,
-  SteamIcon,
-};
+export { default as AppiumIcon } from "./appium";
+export { default as AwsIcon } from "./aws";
+export { default as CheerioIcon } from "./cheerio";
+export { default as DockerIcon } from "./docker";
+export { default as GithubIcon } from "./github";
+export { default as GitlabIcon } from "./gitlab";
+export { default as JavascriptIcon } from "./javascript";
+export { default as MySQLIcon } from "./my-sql";
+export { default as NextJsIcon } from "./nextjs";
+export { default as NodeJsIcon } from "./node";
+export { default as PostgreSQLIcon } from "./postgresql";
+export { default as PrismaIcon } from "./prisma";
+export { default as PythonIcon } from "./python";
+export { default as ReactIcon } from "./react";
+export { default as SteamIcon } from "./steam";
+export { default as TestIcon } from "./test";
+export { default as TypescriptIcon } from "./typescript";
+export { default as WebsiteIcon } from "./website";

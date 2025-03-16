@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface WebsiteIconProps {
+interface WebsiteIconProperties {
   alt: string;
   className?: string;
 }
 
-const WebsiteIcon = ({ alt, className = "" }: WebsiteIconProps) => {
+const WebsiteIcon = ({ alt, className = "" }: WebsiteIconProperties) => {
   return (
     <svg
       stroke="currentColor"

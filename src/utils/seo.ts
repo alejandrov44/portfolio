@@ -10,13 +10,6 @@ export const defaultMetadata: Metadata = {
   metadataBase: new URL(url),
   title: { default: title, template: "%s | Alejandro Viana" },
   description,
-  openGraph: {
-    title,
-    description,
-    url,
-    siteName: name,
-    images: [{ url: `${url}/portfolio.webp` }],
-    type: "website",
-  },
+  openGraph: { title, description, url, siteName: name, images: [{ url: `${url}/portfolio.webp` }], type: "website" },
   robots: { index: true, follow: true },
 };

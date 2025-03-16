@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import { validatDeployTarget, validateBaseUrl } from "./envsValidations";
+import { validatDeployTarget, validateBaseUrl } from "./environment-validations";
 
 dotenv.config();
 
@@ -20,7 +20,7 @@ enum EnvironmentVariablesMap {
 }
 
 const environmentVariables: EnvironmentVariables = {
-  deployTarget: validatDeployTarget(process.env[EnvironmentVariablesMap.deployTarget]!)
+  deployTarget: validatDeployTarget(process.env[EnvironmentVariablesMap.deployTarget] ?? "")
     ? (process.env[EnvironmentVariablesMap.deployTarget] as DeploySites)
     : DeploySites.Local,
   baseUrl: validateBaseUrl(process.env[EnvironmentVariablesMap.baseUrl] ?? ""),

@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface NextJsIconProps {
+interface NextJsIconProperties {
   alt: string;
   className?: string;
 }
 
-const NextJsIcon = ({ alt, className = "" }: NextJsIconProps) => {
+const NextJsIcon = ({ alt, className = "" }: NextJsIconProperties) => {
   return (
     <svg
       stroke="currentColor"

@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface DockerIconProps {
+interface DockerIconProperties {
   alt: string;
   className?: string;
 }
 
-const DockerIcon = ({ alt, className = "" }: DockerIconProps) => {
+const DockerIcon = ({ alt, className = "" }: DockerIconProperties) => {
   return (
     <svg
       stroke="currentColor"

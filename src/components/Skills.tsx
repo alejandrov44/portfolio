@@ -1,8 +1,9 @@
+/* eslint-disable unicorn/prefer-spread */
 "use client";
 
 import React, { JSX, useEffect, useState } from "react";
-import "./Skills.css";
-import { getSkills } from "@/queries/getSkills";
+import "./skills.css";
+import { getSkills } from "@/queries/get-skills";
 import { Skill } from "@/queries/types";
 import {
   TypescriptIcon,
@@ -23,7 +24,7 @@ import {
   WebsiteIcon,
 } from "@/images/icons/skills/index";
 
-const iconMap: { [key: string]: JSX.Element } = {
+const iconMap: Record<string, JSX.Element> = {
   aws: <AwsIcon alt="AWS Icon" />,
   test: <TestIcon alt="Test Icon" />,
   node: <NodeJsIcon alt="Node Icon" />,
@@ -46,8 +47,8 @@ const Skills: React.FC = () => {
   const [skillsData, setSkillsData] = useState<Skill[]>([]);
 
   useEffect(() => {
-    async function fetchSkills() {
-      const data = await getSkills();
+    function fetchSkills() {
+      const data = getSkills();
       setSkillsData(data);
     }
 
@@ -56,11 +57,10 @@ const Skills: React.FC = () => {
 
   if (skillsData.length === 0) return <div>Loading...</div>;
 
-  const skillsByCategory = skillsData.reduce((acc: any, skill: any) => {
-    if (!acc[skill.category]) acc[skill.category] = [];
-    acc[skill.category].push(skill);
-    return acc;
-  }, {});
+  const skillsByCategory: Record<string, Skill[]> = {};
+  for (const skill of skillsData) {
+    skillsByCategory[skill.category].push(skill);
+  }
 
   return (
     <div className="skills-container">
@@ -68,12 +68,12 @@ const Skills: React.FC = () => {
         <div key={index} className="skill-category">
           <h3 className="category-title">{category}</h3>
           <div className="skills-grid">
-            {skillsByCategory[category].map((skill: any, idx: number) => (
-              <div key={idx} className="skill-card">
-                <div className="icon">{iconMap[skill.icon] || <ReactIcon alt="React Icon" />}</div>
+            {skillsByCategory[category].map((skill, index_: number) => (
+              <div key={index_} className="skill-card">
+                <div className="icon">{iconMap[skill.icon]}</div>
                 <h3 className="skill-name">
-                  {skill.name.split("").map((letter: any, i: number) => (
-                    <span key={i} className="letter" style={{ animationDelay: `${i * 0.05}s` }}>
+                  {skill.name.split("").map((letter: any, index__: number) => (
+                    <span key={index__} className="letter" style={{ animationDelay: `${index__ * 0.05}s` }}>
                       {letter}
                     </span>
                   ))}

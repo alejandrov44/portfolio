@@ -16,6 +16,6 @@ const Projects: Project[] = [
   },
 ];
 
-export async function getProjects(): Promise<Project[]> {
-  return await Projects;
+export function getProjects(): Project[] {
+  return Projects;
 }

@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface PrismaIconProps {
+interface PrismaIconProperties {
   alt: string;
   className?: string;
 }
 
-const PrismaIcon = ({ alt, className = "" }: PrismaIconProps) => {
+const PrismaIcon = ({ alt, className = "" }: PrismaIconProperties) => {
   return (
     <svg
       stroke="currentColor"

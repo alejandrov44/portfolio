@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface PageLogoProps {
+interface PageLogoProperties {
   alt: string;
   className?: string;
 }
 
-const PageLogo = ({ alt, className = "" }: PageLogoProps) => {
+const PageLogo = ({ alt, className = "" }: PageLogoProperties) => {
   return (
     <svg
       version="1.0"

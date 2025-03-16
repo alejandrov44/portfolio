@@ -1,12 +1,12 @@
 import React from "react";
-import "./VerticalTimeline.css";
+import "./vertical-timeline.css";
 
-interface VerticalTimelineProps {
+interface VerticalTimelineProperties {
   children: any;
 }
 
-const VerticalTimeline: React.FC<VerticalTimelineProps> = ({ children }) => {
-  if (typeof window === "object") {
+const VerticalTimeline: React.FC<VerticalTimelineProperties> = ({ children }) => {
+  if (typeof globalThis.window === "object") {
     document.documentElement.style.setProperty("--line-color", "#FFF");
   }
   return <div className={"vertical-timeline vertical-timeline--animate vertical-timeline--two-columns"}>{children}</div>;

@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface StarIconProps {
+interface StarIconProperties {
   alt: string;
   className?: string;
 }
 
-const StarIcon = ({ alt, className = "" }: StarIconProps) => {
+const StarIcon = ({ alt, className = "" }: StarIconProperties) => {
   return (
     <svg
       stroke="currentColor"

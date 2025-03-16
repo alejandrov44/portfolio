@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface CheerioIconProps {
+interface CheerioIconProperties {
   alt: string;
   className?: string;
 }
 
-const CheerioIcon = ({ alt, className = "" }: CheerioIconProps) => {
+const CheerioIcon = ({ alt, className = "" }: CheerioIconProperties) => {
   return (
     <svg
       stroke="currentColor"

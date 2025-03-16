@@ -1,21 +1,21 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import VerticalTimeline from "@/components/VerticalTimeline";
-import VerticalTimelineElement from "@/components/VerticalTimelineElement";
+import VerticalTimeline from "@/components/vertical-timeline";
+import VerticalTimelineElement from "@/components/vertical-timeline-element";
 import WorkIcon from "@/images/icons/work-experience/work";
 import SchoolIcon from "@/images/icons/work-experience/school";
 import StarIcon from "@/images/icons/work-experience/star";
-import "./ExperienceTimeline.css";
+import "./experience-timeline.css";
 import { TimelineItem } from "@/queries/types";
-import { getTimeline } from "@/queries/getWorkExperience";
+import { getTimeline } from "@/queries/get-work-experience";
 
 const WorkExperience: React.FC = () => {
-  const [timeLineData, setTimeLineData] = useState<TimelineItem[] | null>(null);
+  const [timeLineData, setTimeLineData] = useState<TimelineItem[] | undefined>();
 
   useEffect(() => {
-    async function fetchTimelineItem() {
-      const data = await getTimeline();
+    function fetchTimelineItem() {
+      const data = getTimeline();
       setTimeLineData(data);
     }
     fetchTimelineItem();

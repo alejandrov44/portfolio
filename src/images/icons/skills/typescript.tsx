@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface TypescriptIconProps {
+interface TypescriptIconProperties {
   alt: string;
   className?: string;
 }
 
-const TypescriptIcon = ({ alt, className = "" }: TypescriptIconProps) => {
+const TypescriptIcon = ({ alt, className = "" }: TypescriptIconProperties) => {
   return (
     <svg
       stroke="currentColor"

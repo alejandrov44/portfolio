@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface JavascriptIconProps {
+interface JavascriptIconProperties {
   alt: string;
   className?: string;
 }
 
-const JavascriptIcon = ({ alt, className = "" }: JavascriptIconProps) => {
+const JavascriptIcon = ({ alt, className = "" }: JavascriptIconProperties) => {
   return (
     <svg
       stroke="currentColor"

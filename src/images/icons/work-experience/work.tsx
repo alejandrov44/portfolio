@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface WorkIconProps {
+interface WorkIconProperties {
   alt: string;
   className?: string;
 }
 
-const WorkIcon = ({ alt, className = "" }: WorkIconProps) => {
+const WorkIcon = ({ alt, className = "" }: WorkIconProperties) => {
   return (
     <svg
       stroke="currentColor"

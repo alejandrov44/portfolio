@@ -1,11 +1,10 @@
-/* eslint-disable max-len */
 
-interface ReactIconProps {
+interface ReactIconProperties {
   alt: string;
   className?: string;
 }
 
-const ReactIcon = ({ alt, className = "" }: ReactIconProps) => {
+const ReactIcon = ({ alt, className = "" }: ReactIconProperties) => {
   return (
     <svg
       stroke="currentColor"

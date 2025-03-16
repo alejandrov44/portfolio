@@ -57,7 +57,7 @@ Your feedback is valuable and helps make this project better for everyone. Thank
 
 ## 📜 License
 
-This project is licensed under the MIT License. Feel free to use it, modify it, and share it! 🌈
+This project is licensed under the [MIT License](LICENSE). Feel free to use it, modify it, and share it! 🌈
 
 ## 📧 Contact Me
 

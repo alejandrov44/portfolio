@@ -52,6 +52,6 @@ const timelineItems: TimelineItem[] = [
   },
 ];
 
-export async function getTimeline(): Promise<TimelineItem[]> {
-  return await timelineItems;
-}
+export const getTimeline = (): TimelineItem[] => {
+  return timelineItems;
+};
