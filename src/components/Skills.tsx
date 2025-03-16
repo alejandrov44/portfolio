@@ -59,7 +59,7 @@ const Skills: React.FC = () => {
 
   const skillsByCategory: Record<string, Skill[]> = {};
   for (const skill of skillsData) {
-    skillsByCategory[skill.category].push(skill);
+    (skillsByCategory[skill.category] ??= []).push(skill);
   }
 
   return (
