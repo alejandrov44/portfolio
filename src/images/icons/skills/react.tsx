@@ -1,4 +1,3 @@
-
 interface ReactIconProperties {
   alt: string;
   className?: string;

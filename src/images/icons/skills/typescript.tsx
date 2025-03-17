@@ -1,4 +1,3 @@
-
 interface TypescriptIconProperties {
   alt: string;
   className?: string;

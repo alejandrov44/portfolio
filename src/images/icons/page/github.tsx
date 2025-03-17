@@ -1,11 +1,9 @@
-/* eslint-disable max-len */
-
-interface GithubIconProps {
+interface GithubIconProperties {
   alt: string;
   className?: string;
 }
 
-const GithubIcon = ({ alt, className = "" }: GithubIconProps) => {
+const GithubIcon = ({ alt, className = "" }: GithubIconProperties) => {
   return (
     <svg
       stroke="currentColor"

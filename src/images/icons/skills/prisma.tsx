@@ -1,4 +1,3 @@
-
 interface PrismaIconProperties {
   alt: string;
   className?: string;

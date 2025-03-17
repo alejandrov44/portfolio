@@ -28,6 +28,7 @@ export enum SkillNames {
   React = "React",
 }
 
+/* eslint-disable unicorn/prevent-abbreviations */
 export enum SkillCategories {
   Backend = "Backend",
   CloudAndDevOps = "Cloud & DevOps",

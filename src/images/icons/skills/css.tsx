@@ -1,11 +1,9 @@
-/* eslint-disable max-len */
-
-interface CSSIconProps {
+interface CSSIconProperties {
   alt: string;
   className?: string;
 }
 
-const CSSIcon = ({ alt, className = "" }: CSSIconProps) => {
+const CSSIcon = ({ alt, className = "" }: CSSIconProperties) => {
   return (
     <svg
       stroke="currentColor"

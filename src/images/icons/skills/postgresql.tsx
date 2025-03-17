@@ -1,4 +1,3 @@
-
 interface PostgreSQLIconProperties {
   alt: string;
   className?: string;

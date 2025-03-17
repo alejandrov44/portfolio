@@ -1,4 +1,3 @@
-
 interface JavascriptIconProperties {
   alt: string;
   className?: string;

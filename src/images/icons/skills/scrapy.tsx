@@ -1,11 +1,9 @@
-/* eslint-disable max-len */
-
-interface ScrappyIconProps {
+interface ScrappyIconProperties {
   alt: string;
   className?: string;
 }
 
-const ScrappyIcon = ({ alt, className = "" }: ScrappyIconProps) => {
+const ScrappyIcon = ({ alt, className = "" }: ScrappyIconProperties) => {
   return (
     <svg
       stroke="currentColor"

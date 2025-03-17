@@ -1,4 +1,3 @@
-
 interface NextJsIconProperties {
   alt: string;
   className?: string;

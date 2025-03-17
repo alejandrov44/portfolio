@@ -1,4 +1,3 @@
-
 interface WebsiteIconProperties {
   alt: string;
   className?: string;

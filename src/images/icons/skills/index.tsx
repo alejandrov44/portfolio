@@ -15,7 +15,7 @@ import ReactIcon from "./react";
 import SteamIcon from "./steam";
 import TestIcon from "./test";
 import TypescriptIcon from "./typescript";
-import WebsiteIcon from "./website";
+// import WebsiteIcon from "./website";
 import CIcon from "./c";
 import ScrappyIcon from "./scrapy";
 import CMakeIcon from "./cmake";

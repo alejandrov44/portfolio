@@ -1,11 +1,9 @@
-/* eslint-disable max-len */
-
-interface HTMLIconProps {
+interface HTMLIconProperties {
   alt: string;
   className?: string;
 }
 
-const HTMLIcon = ({ alt, className = "" }: HTMLIconProps) => {
+const HTMLIcon = ({ alt, className = "" }: HTMLIconProperties) => {
   return (
     <svg
       stroke="currentColor"
@@ -21,4 +19,5 @@ const HTMLIcon = ({ alt, className = "" }: HTMLIconProps) => {
     </svg>
   );
 };
+
 export default HTMLIcon;

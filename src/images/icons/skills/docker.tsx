@@ -1,4 +1,3 @@
-
 interface DockerIconProperties {
   alt: string;
   className?: string;

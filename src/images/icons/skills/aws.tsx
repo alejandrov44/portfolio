@@ -1,4 +1,3 @@
- 
 interface AwsIconProperties {
   alt: string;
   className?: string;

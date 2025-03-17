@@ -1,4 +1,3 @@
-
 interface GithubIconProperties {
   alt: string;
   className?: string;

@@ -1,4 +1,3 @@
-
 interface CheerioIconProperties {
   alt: string;
   className?: string;

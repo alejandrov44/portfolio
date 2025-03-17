@@ -1,4 +1,3 @@
- 
 interface AppiumIconProperties {
   alt: string;
   className?: string;

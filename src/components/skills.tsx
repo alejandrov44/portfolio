@@ -5,7 +5,6 @@ import React, { useEffect, useState } from "react";
 import "./skills.css";
 import { getSkills } from "@/queries/get-skills";
 import { Skill } from "@/queries/types";
-import skillIcons from "@/images/icons/skills/index";
 
 const Skills: React.FC = () => {
   const [skillsData, setSkillsData] = useState<Skill[]>([]);

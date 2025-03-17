@@ -1,4 +1,3 @@
-
 interface PythonIconProperties {
   alt: string;
   className?: string;

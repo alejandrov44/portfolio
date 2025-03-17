@@ -1,4 +1,3 @@
-
 interface NodeJsIconProperties {
   alt: string;
   className?: string;

@@ -1,4 +1,3 @@
-
 interface SteamIconProperties {
   alt: string;
   className?: string;

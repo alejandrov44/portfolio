@@ -1,11 +1,9 @@
-/* eslint-disable max-len */
-
-interface CIconProps {
+interface CIconProperties {
   alt: string;
   className?: string;
 }
 
-const CIcon = ({ alt, className = "" }: CIconProps) => {
+const CIcon = ({ alt, className = "" }: CIconProperties) => {
   return (
     <svg
       stroke="currentColor"

@@ -1,4 +1,3 @@
-
 interface TestIconProperties {
   alt: string;
   className?: string;

@@ -1,11 +1,9 @@
-/* eslint-disable max-len */
-
-interface CMakeIconProps {
+interface CMakeIconProperties {
   alt: string;
   className?: string;
 }
 
-const CMakeIcon = ({ alt, className = "" }: CMakeIconProps) => {
+const CMakeIcon = ({ alt, className = "" }: CMakeIconProperties) => {
   return (
     <svg
       stroke="currentColor"

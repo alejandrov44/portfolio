@@ -1,4 +1,3 @@
-
 interface MySQLIconProperties {
   alt: string;
   className?: string;

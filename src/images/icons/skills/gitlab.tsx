@@ -1,4 +1,3 @@
-
 interface GitlabIconProperties {
   alt: string;
   className?: string;
