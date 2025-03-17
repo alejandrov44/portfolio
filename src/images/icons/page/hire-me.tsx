@@ -1,10 +1,11 @@
+/* eslint-disable max-len */
 
-interface HireMeIconProperties {
+interface HireMeIconProps {
   alt: string;
   className?: string;
 }
 
-const HireMeIcon = ({ alt, className = "" }: HireMeIconProperties) => {
+const HireMeIcon = ({ alt, className = "" }: HireMeIconProps) => {
   return (
     <svg
       stroke="currentColor"

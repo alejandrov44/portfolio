@@ -1,4 +1,33 @@
-/* eslint-disable unicorn/prevent-abbreviations */
+import { JSX } from "react";
+
+export enum SkillNames {
+  NodeJs = "Node.js",
+  Python = "Python",
+  CICD = "CI/CD",
+  Docker = "Docker",
+  AWS = "AWS",
+  MySQL = "MySQL",
+  PostgreSQL = "PostgreSQL",
+  Prisma = "Prisma",
+  HTML = "HTML",
+  CSS = "CSS",
+  JavaScript = "JavaScript",
+  TypeScript = "TypeScript",
+  NextJs = "Next.js",
+  Gitlab = "Gitlab",
+  Github = "Github",
+  Playwright = "Playwright",
+  Appium = "Appium",
+  Cheerio = "Cheerio",
+  SteamAPI = "SteamAPI",
+  Crawling = "Crawling",
+  C = "C",
+  CMake = "CMake",
+  Allegro5 = "Allegro5",
+  Test = "Test",
+  React = "React",
+}
+
 export enum SkillCategories {
   Backend = "Backend",
   CloudAndDevOps = "Cloud & DevOps",
@@ -8,10 +37,10 @@ export enum SkillCategories {
 }
 
 export interface Skill {
-  name: string;
+  name: SkillNames;
   category: SkillCategories;
   description: string;
-  icon: string;
+  icon: JSX.Element;
 }
 
 export interface TimelineItem {
@@ -26,6 +55,6 @@ export interface TimelineItem {
 export interface Project {
   title: string;
   description: string;
-  techUsed: string;
+  techUsed: SkillNames[];
   image: string;
 }

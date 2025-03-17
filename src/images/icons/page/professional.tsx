@@ -1,10 +1,11 @@
+/* eslint-disable max-len */
 
-interface ProfessionalIconProperties {
+interface ProfessionalIconProps {
   alt: string;
   className?: string;
 }
 
-const ProfessionalIcon = ({ alt, className = "" }: ProfessionalIconProperties) => {
+const ProfessionalIcon = ({ alt, className = "" }: ProfessionalIconProps) => {
   return (
     <svg
       stroke="currentColor"

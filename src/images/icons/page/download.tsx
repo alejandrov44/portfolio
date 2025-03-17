@@ -1,10 +1,11 @@
+/* eslint-disable max-len */
 
-interface DownloadIconProperties {
+interface DownloadIconProps {
   alt: string;
   className?: string;
 }
 
-const DownloadIcon = ({ alt, className = "" }: DownloadIconProperties) => {
+const DownloadIcon = ({ alt, className = "" }: DownloadIconProps) => {
   return (
     <svg
       viewBox="0 0 24 24"

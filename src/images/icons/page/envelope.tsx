@@ -1,10 +1,11 @@
+/* eslint-disable max-len */
 
-interface EnvelopeIconProperties {
+interface EnvelopeIconProps {
   alt: string;
   className?: string;
 }
 
-const EnvelopeIcon = ({ alt, className = "" }: EnvelopeIconProperties) => {
+const EnvelopeIcon = ({ alt, className = "" }: EnvelopeIconProps) => {
   return (
     <svg
       stroke="currentColor"

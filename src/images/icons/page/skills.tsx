@@ -1,10 +1,11 @@
+/* eslint-disable max-len */
 
-interface SkillsIconProperties {
+interface SkillsIconProps {
   alt: string;
   className?: string;
 }
 
-const SkillsIcon = ({ alt, className = "" }: SkillsIconProperties) => {
+const SkillsIcon = ({ alt, className = "" }: SkillsIconProps) => {
   return (
     <svg
       stroke="currentColor"

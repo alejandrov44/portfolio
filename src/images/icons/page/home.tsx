@@ -1,10 +1,11 @@
+/* eslint-disable max-len */
 
-interface HomeIconProperties {
+interface HomeIconProps {
   alt: string;
   className?: string;
 }
 
-const HomeIcon = ({ alt, className = "" }: HomeIconProperties) => {
+const HomeIcon = ({ alt, className = "" }: HomeIconProps) => {
   return (
     <svg
       stroke="currentColor"

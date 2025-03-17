@@ -1,5 +1,5 @@
 import ProfileBadge from "@/components/profile-badge";
-import EnvelopeIcon from "@/images/icons/envelope";
+import EnvelopeIcon from "@/images/icons/page/envelope";
 
 const Home: React.FC = () => {
   return (

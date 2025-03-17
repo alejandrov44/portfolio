@@ -1,10 +1,11 @@
+/* eslint-disable max-len */
 
-interface CoffeeIconProperties {
+interface CoffeeIconProps {
   alt: string;
   className?: string;
 }
 
-const CoffeeIcon = ({ alt, className = "" }: CoffeeIconProperties) => {
+const CoffeeIcon = ({ alt, className = "" }: CoffeeIconProps) => {
   return (
     <svg
       stroke="currentColor"

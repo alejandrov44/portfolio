@@ -1,10 +1,11 @@
+/* eslint-disable max-len */
 
-interface ProjectsIconProperties {
+interface ProjectsIconProps {
   alt: string;
   className?: string;
 }
 
-const ProjectsIcon = ({ alt, className = "" }: ProjectsIconProperties) => {
+const ProjectsIcon = ({ alt, className = "" }: ProjectsIconProps) => {
   return (
     <svg
       stroke="currentColor"

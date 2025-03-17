@@ -4,10 +4,10 @@ import React, { useState, useEffect } from "react";
 import "./navbar.css";
 import Link from "next/link";
 import Image from "next/image";
-import HomeIcon from "@/images/icons/home";
-import ProfessionalIcon from "@/images/icons/professional";
-import SkillsIcon from "@/images/icons/skills";
-import ProjectsIcon from "@/images/icons/projects";
+import HomeIcon from "@/images/icons/page/home";
+import ProfessionalIcon from "@/images/icons/page/professional";
+import SkillsIcon from "@/images/icons/page/skills";
+import ProjectsIcon from "@/images/icons/page/projects";
 import pageLogo from "@/images/logos/logo-50x50.webp";
 import { getGitHubStars } from "@/queries/get-github-stars";
 
