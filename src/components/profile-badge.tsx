@@ -3,9 +3,9 @@
 import React from "react";
 import "./profile-badge.css";
 import Image from "next/image";
-import LinkdinIcon from "@/images/icons/linkdin";
-import DownloadIcon from "@/images/icons/download";
-import GithubIcon from "@/images/icons/github";
+import LinkdinIcon from "@/images/icons/page/linkdin";
+import DownloadIcon from "@/images/icons/page/download";
+import GithubIcon from "@/images/icons/page/github";
 import profilePic from "@/images/profilePic.webp";
 import { basePath } from "../../next.config";
 

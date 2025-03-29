@@ -1,22 +1,74 @@
-import { Skill, SkillCategories } from "@/queries/types";
+import skillIcons from "@/images/icons/skills";
+import { Skill, SkillCategories, SkillNames } from "@/queries/types";
 
 const Skills: Skill[] = [
-  { category: SkillCategories.Backend, description: "Backend Runtime", icon: "node", name: "Node.js" },
-  { category: SkillCategories.Backend, description: "High-Level, General-Purpose Programming Language", icon: "python", name: "Python" },
-  { category: SkillCategories.CloudAndDevOps, description: "Continuous Integration & Delivery", icon: "docker", name: "CI/CD" },
-  { category: SkillCategories.CloudAndDevOps, description: "Containerization", icon: "docker", name: "Docker" },
-  { category: SkillCategories.CloudAndDevOps, description: "Cloud Platform", icon: "aws", name: "AWS" },
-  { category: SkillCategories.Databases, description: "Relational Database", icon: "mysql", name: "MySQL" },
-  { category: SkillCategories.Databases, description: "Relational Database", icon: "postgresql", name: "PostgreSQL" },
-  { category: SkillCategories.Databases, description: "Node.js ORM", icon: "prisma", name: "Prisma" },
-  { category: SkillCategories.Frontend, description: "Web Markup and Styling", icon: "website", name: "HTML&CSS" },
-  { category: SkillCategories.Frontend, description: "Scripting Language", icon: "javascript", name: "JavaScript" },
-  { category: SkillCategories.Frontend, description: "Type-safe JavaScript", icon: "typescript", name: "TypeScript" },
-  { category: SkillCategories.Frontend, description: "Frontend Framework", icon: "nextjs", name: "Next.js" },
-  { category: SkillCategories.OtherToolsAndPractices, description: "DevOps Platform", icon: "gitlab", name: "Gitlab" },
-  { category: SkillCategories.OtherToolsAndPractices, description: "DevOps Platform", icon: "github", name: "Github" },
-  { category: SkillCategories.OtherToolsAndPractices, description: "Automation Library", icon: "test", name: "Playwright" },
-  { category: SkillCategories.OtherToolsAndPractices, description: "Automation Tool", icon: "appium", name: "Appium" },
+  { category: SkillCategories.Backend, description: "Backend Runtime", icon: skillIcons[SkillNames.NodeJs], name: SkillNames.NodeJs },
+  {
+    category: SkillCategories.Backend,
+    description: "High-Level, General-Purpose Programming Language",
+    icon: skillIcons[SkillNames.Python],
+    name: SkillNames.Python,
+  },
+  {
+    category: SkillCategories.CloudAndDevOps,
+    description: "Continuous Integration & Delivery",
+    icon: skillIcons[SkillNames.Docker],
+    name: SkillNames.CICD,
+  },
+  {
+    category: SkillCategories.CloudAndDevOps,
+    description: "Containerization",
+    icon: skillIcons[SkillNames.Docker],
+    name: SkillNames.Docker,
+  },
+  { category: SkillCategories.CloudAndDevOps, description: "Cloud Platform", icon: skillIcons[SkillNames.AWS], name: SkillNames.AWS },
+  { category: SkillCategories.Databases, description: "Relational Database", icon: skillIcons[SkillNames.MySQL], name: SkillNames.MySQL },
+  {
+    category: SkillCategories.Databases,
+    description: "Relational Database",
+    icon: skillIcons[SkillNames.PostgreSQL],
+    name: SkillNames.PostgreSQL,
+  },
+  { category: SkillCategories.Databases, description: "Node.js ORM", icon: skillIcons[SkillNames.Prisma], name: SkillNames.Prisma },
+  { category: SkillCategories.Frontend, description: "Web Markup", icon: skillIcons[SkillNames.HTML], name: SkillNames.HTML },
+  { category: SkillCategories.Frontend, description: "Web Styling", icon: skillIcons[SkillNames.CSS], name: SkillNames.CSS },
+  {
+    category: SkillCategories.Frontend,
+    description: "Scripting Language",
+    icon: skillIcons[SkillNames.JavaScript],
+    name: SkillNames.JavaScript,
+  },
+  {
+    category: SkillCategories.Frontend,
+    description: "Type-safe JavaScript",
+    icon: skillIcons[SkillNames.TypeScript],
+    name: SkillNames.TypeScript,
+  },
+  { category: SkillCategories.Frontend, description: "Frontend Framework", icon: skillIcons[SkillNames.NextJs], name: SkillNames.NextJs },
+  {
+    category: SkillCategories.OtherToolsAndPractices,
+    description: "DevOps Platform",
+    icon: skillIcons[SkillNames.Gitlab],
+    name: SkillNames.Gitlab,
+  },
+  {
+    category: SkillCategories.OtherToolsAndPractices,
+    description: "DevOps Platform",
+    icon: skillIcons[SkillNames.Github],
+    name: SkillNames.Github,
+  },
+  {
+    category: SkillCategories.OtherToolsAndPractices,
+    description: "Automation Library",
+    icon: skillIcons[SkillNames.Test],
+    name: SkillNames.Playwright,
+  },
+  {
+    category: SkillCategories.OtherToolsAndPractices,
+    description: "Automation Tool",
+    icon: skillIcons[SkillNames.Appium],
+    name: SkillNames.Appium,
+  },
 ];
 
 export function getSkills(): Skill[] {

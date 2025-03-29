@@ -1,25 +1,19 @@
 "use client";
 
-import React, { JSX, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import "./projects.css";
 import { Project } from "@/queries/types";
 import { getProjects } from "@/queries/get-projects";
 import portfolioProjectImage from "@/images/projects/portfolio.webp";
 import freeGamesAlertsImage from "@/images/projects/free-games-alerts.webp";
-import { ReactIcon, NodeJsIcon, NextJsIcon, WebsiteIcon, CheerioIcon, SteamIcon } from "@/images/icons/skills/index";
+import lsRacingImage from "@/images/projects/ls-racing-logo.webp";
+import skillIcons from "@/images/icons/skills/index";
 
-const projectImages: Record<string, StaticImageData> = { freeGamesAlerts: freeGamesAlertsImage, portfolio: portfolioProjectImage };
-
-const techIcons: Record<string, JSX.Element> = {
-  CSS3: <WebsiteIcon alt="Website Icon" />,
-  Cheerio: <CheerioIcon alt="Cheerio Icon" />,
-  Crawling: <WebsiteIcon alt="Crawling Icon" />,
-  HTML5: <WebsiteIcon alt="Website Icon" />,
-  "Next.js": <NextJsIcon alt="NextJs Icon" />,
-  "Node.js": <NodeJsIcon alt="NodeJs Icon" />,
-  React: <ReactIcon alt="React Icon" />,
-  "Steam API": <SteamIcon alt="Steam Icon" />,
+const projectImages: Record<string, StaticImageData> = {
+  freeGamesAlerts: freeGamesAlertsImage,
+  lsRacing: lsRacingImage,
+  portfolio: portfolioProjectImage,
 };
 
 const Projects: React.FC = () => {
@@ -48,9 +42,9 @@ const Projects: React.FC = () => {
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className="tech-used">
-                {project.techUsed.split(", ").map((tech, index_) => (
+                {project.techUsed.map((tech, index_) => (
                   <span className="tech-badge" key={index_}>
-                    {techIcons[tech]} {tech}
+                    {skillIcons[tech]} {tech}
                   </span>
                 ))}
               </div>
