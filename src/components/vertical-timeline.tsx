@@ -1,8 +1,8 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./vertical-timeline.css";
 
 interface VerticalTimelineProperties {
-  children: any;
+  children: ReactNode;
 }
 
 const VerticalTimeline: React.FC<VerticalTimelineProperties> = ({ children }) => {

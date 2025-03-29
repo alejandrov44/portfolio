@@ -2,8 +2,6 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "alejandrov44 portfolio",
-  "author": "alejandrov44",
-  "license": "MIT",
   "homepage": "https://github.com/alejandrov44/portfolio",
   "bugs": {
     "url": "https://github.com/alejandrov44/portfolio/issues"
@@ -12,22 +10,32 @@
     "type": "git",
     "url": "git@github.com:alejandrov44/eslint-config.git"
   },
+  "license": "MIT",
+  "author": "alejandrov44",
+  "type": "module",
   "main": "index.ts",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "clean": "rm -rf node_modules && rm package-lock.json && rm -rf .next && rm -rf out"
+    "clean": "rm -rf node_modules && rm package-lock.json && rm -rf .next && rm -rf out",
+    "dev": "next dev",
+    "format": "prettier --write .",
+    "lint": "eslint --cache .",
+    "lint:format": "prettier --cache --check .",
+    "start": "next start"
   },
-  "dependencies": {
-    "@alejandrov44/eslint-config": "^0.4.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@alejandrov44/eslint-config": "^0.5.0",
+    "@eslint/eslintrc": "^3.3.1",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@next/eslint-plugin-next": "^15.2.2",
     "@types/node": "^22.13.5",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "dotenv": "^16.4.7",
     "next": "^15.2.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-packagejson": "^2.5.10",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-intersection-observer": "^9.16.0",

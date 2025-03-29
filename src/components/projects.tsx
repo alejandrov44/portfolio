@@ -9,16 +9,16 @@ import portfolioProjectImage from "@/images/projects/portfolio.webp";
 import freeGamesAlertsImage from "@/images/projects/free-games-alerts.webp";
 import { ReactIcon, NodeJsIcon, NextJsIcon, WebsiteIcon, CheerioIcon, SteamIcon } from "@/images/icons/skills/index";
 
-const projectImages: Record<string, StaticImageData> = { portfolio: portfolioProjectImage, freeGamesAlerts: freeGamesAlertsImage };
+const projectImages: Record<string, StaticImageData> = { freeGamesAlerts: freeGamesAlertsImage, portfolio: portfolioProjectImage };
 
 const techIcons: Record<string, JSX.Element> = {
-  HTML5: <WebsiteIcon alt="Website Icon" />,
   CSS3: <WebsiteIcon alt="Website Icon" />,
-  React: <ReactIcon alt="React Icon" />,
+  Cheerio: <CheerioIcon alt="Cheerio Icon" />,
+  Crawling: <WebsiteIcon alt="Crawling Icon" />,
+  HTML5: <WebsiteIcon alt="Website Icon" />,
   "Next.js": <NextJsIcon alt="NextJs Icon" />,
   "Node.js": <NodeJsIcon alt="NodeJs Icon" />,
-  Crawling: <WebsiteIcon alt="Crawling Icon" />,
-  Cheerio: <CheerioIcon alt="Cheerio Icon" />,
+  React: <ReactIcon alt="React Icon" />,
   "Steam API": <SteamIcon alt="Steam Icon" />,
 };
 
@@ -34,20 +34,22 @@ const Projects: React.FC = () => {
     fetchProjects();
   }, []);
 
-  if (projects.length === 0) return <div>Loading...</div>;
+  if (projects.length === 0) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="projects-container">
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <div key={index} className="project-card" style={{ "--delay": `${index * 0.1}s` } as React.CSSProperties}>
-            <Image src={projectImages[project.image]} alt={project.title} className="project-image" />
+          <div className="project-card" key={index} style={{ "--delay": `${index * 0.1}s` } as React.CSSProperties}>
+            <Image alt={project.title} className="project-image" src={projectImages[project.image]} />
             <div className="project-details">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className="tech-used">
                 {project.techUsed.split(", ").map((tech, index_) => (
-                  <span key={index_} className="tech-badge">
+                  <span className="tech-badge" key={index_}>
                     {techIcons[tech]} {tech}
                   </span>
                 ))}

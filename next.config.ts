@@ -5,15 +5,15 @@ export const basePath = new URL(environmentVariables.baseUrl).pathname.replace(/
 
 const next = () => {
   const nextConfig = {
-    output: "export",
-    basePath: basePath === "/" ? "" : basePath,
     assetPrefix: basePath === "/" ? "" : basePath,
-    trailingSlash: true,
-    images: { unoptimized: true },
+    basePath: basePath === "/" ? "" : basePath,
     eslint: { ignoreDuringBuilds: true },
-    typescript: { ignoreBuildErrors: true },
-    pageExtensions: ["tsx", "mdx"],
     experimental: { typedRoutes: true },
+    images: { unoptimized: true },
+    output: "export",
+    pageExtensions: ["tsx", "mdx"],
+    trailingSlash: true,
+    typescript: { ignoreBuildErrors: true },
   } satisfies NextConfig;
   return nextConfig;
 };

@@ -5,7 +5,9 @@ export const validatDeployTarget = (deployTarget: string): deployTarget is Deplo
 };
 
 export const validateBaseUrl = (baseUrl: string): string => {
-  const regex = /[\w-]+[\w-]+/;
-  if (!regex.test(baseUrl)) throw new Error("Invalid base url.");
+  const regex = /[\w-]{2,}/;
+  if (!regex.test(baseUrl)) {
+    throw new Error("Invalid base url.");
+  }
   return baseUrl;
 };

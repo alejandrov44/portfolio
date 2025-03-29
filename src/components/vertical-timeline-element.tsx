@@ -5,23 +5,23 @@ import "./vertical-timeline-element.css";
 interface VerticalTimelineElementProperties {
   children?: React.JSX.Element;
   className?: string;
-  contentStyle?: CSSProperties;
   contentArrowStyle?: CSSProperties;
-  iconStyle: CSSProperties;
+  contentStyle?: CSSProperties;
   date?: string;
   icon: React.JSX.Element;
+  iconStyle: CSSProperties;
 }
 
 const VerticalTimelineElement: React.FC<VerticalTimelineElementProperties> = ({
   children,
   className = "",
-  contentStyle,
   contentArrowStyle,
-  iconStyle,
+  contentStyle,
   date = "",
   icon,
+  iconStyle,
 }) => {
-  const { ref, inView } = useInView({ rootMargin: "0px 0px -40px 0px", triggerOnce: true });
+  const { inView, ref } = useInView({ rootMargin: "0px 0px -40px 0px", triggerOnce: true });
 
   let iconClassNames = `vertical-timeline-element-icon shadow-size-small`;
   iconClassNames += inView ? " bounce-in" : " is-hidden";
@@ -31,15 +31,15 @@ const VerticalTimelineElement: React.FC<VerticalTimelineElementProperties> = ({
 
   return (
     <div
-      ref={ref}
       className={`${className} vertical-timeline-element ${children ? "" : "vertical-timeline-element--no-children"}`}
+      ref={ref}
       style={undefined}>
       <React.Fragment>
-        <span style={iconStyle} className={iconClassNames}>
+        <span className={iconClassNames} style={iconStyle}>
           {icon}
         </span>
-        <div style={contentStyle} className={textClassNames}>
-          <div style={contentArrowStyle} className="vertical-timeline-element-content-arrow" />
+        <div className={textClassNames} style={contentStyle}>
+          <div className="vertical-timeline-element-content-arrow" style={contentArrowStyle} />
           {children}
           <span className={"vertical-timeline-element-date"}>{date}</span>
         </div>

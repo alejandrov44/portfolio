@@ -12,7 +12,7 @@ import { basePath } from "../../next.config";
 const ProfileBadge: React.FC = () => {
   return (
     <div className="linkedin-badge-custom">
-      <Image src={profilePic} alt="Alejandro Viana" className="badge-avatar" priority={true} loading="eager" />
+      <Image alt="Alejandro Viana" className="badge-avatar" loading="eager" priority={true} src={profilePic} />
       <div className="badge-content">
         <h3 className="badge-name">Alejandro Viana</h3>
         <p className="badge-title">Software Engineer</p>
@@ -22,14 +22,14 @@ const ProfileBadge: React.FC = () => {
         </p>
         <p className="badge-company">Shopfully | LaSalle Universtity</p>
         <div>
-          <a href="https://www.linkedin.com/in/alejandro-viana/" target="_blank" rel="noopener noreferrer" className="badge-link">
-            <LinkdinIcon className="linkedin-icon" alt="Linkdin Icon" /> View Profile
+          <a className="badge-link" href="https://www.linkedin.com/in/alejandro-viana/" rel="noopener noreferrer" target="_blank">
+            <LinkdinIcon alt="Linkdin Icon" className="linkedin-icon" /> View Profile
           </a>
-          <a href={`${basePath}/files/AlejandroResume.pdf`} target="_blank" rel="noopener noreferrer" className="download-button">
-            <DownloadIcon className="download-icon" alt="Download Icon" /> Download CV
+          <a className="download-button" href={`${basePath}/files/AlejandroResume.pdf`} rel="noopener noreferrer" target="_blank">
+            <DownloadIcon alt="Download Icon" className="download-icon" /> Download CV
           </a>
-          <a href="https://github.com/alejandrov44" target="_blank" rel="noopener noreferrer" className="github-button">
-            <GithubIcon className="github-icon" alt="Github Icon" /> Check Github
+          <a className="github-button" href="https://github.com/alejandrov44" rel="noopener noreferrer" target="_blank">
+            <GithubIcon alt="Github Icon" className="github-icon" /> Check Github
           </a>
         </div>
       </div>

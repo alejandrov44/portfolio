@@ -21,7 +21,9 @@ const WorkExperience: React.FC = () => {
     fetchTimelineItem();
   }, []);
 
-  if (!timeLineData) return <div>Loading...</div>;
+  if (!timeLineData) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
@@ -31,25 +33,25 @@ const WorkExperience: React.FC = () => {
       <VerticalTimeline>
         {timeLineData.map((item, index) => (
           <VerticalTimelineElement
-            key={index}
             className={`vertical-timeline-element--${item.timelineType}`}
-            contentStyle={
-              item.timelineType === "work"
-                ? { background: index === 0 ? "rgb(117, 192, 254)" : "rgb(240, 240, 240)", color: "#fff" }
-                : { background: "rgb(254, 215, 123)", color: "#fff" }
-            }
             contentArrowStyle={
               item.timelineType === "work"
                 ? { borderRight: index === 0 ? "7px solid rgb(33, 150, 243)" : "7px solid rgb(240, 240, 240)" }
                 : { borderRight: "7px solid rgb(254, 215, 123)" }
             }
+            contentStyle={
+              item.timelineType === "work"
+                ? { background: index === 0 ? "rgb(117, 192, 254)" : "rgb(240, 240, 240)", color: "#fff" }
+                : { background: "rgb(254, 215, 123)", color: "#fff" }
+            }
             date={item.dateRange}
+            icon={item.timelineType === "work" ? <WorkIcon alt="Work Icon" /> : <SchoolIcon alt="School Icon" />}
             iconStyle={
               item.timelineType === "work"
                 ? { background: "rgb(33, 150, 243)", color: "#fff" }
                 : { background: "rgb(255, 202, 79)", color: "#fff" }
             }
-            icon={item.timelineType === "work" ? <WorkIcon alt="Work Icon" /> : <SchoolIcon alt="School Icon" />}>
+            key={index}>
             <div style={{ color: "black" }}>
               <h3 className="vertical-timeline-element-title">{item.name}</h3>
               <h4 className="vertical-timeline-element-subtitle">{item.title}</h4>
@@ -62,7 +64,7 @@ const WorkExperience: React.FC = () => {
             </div>
           </VerticalTimelineElement>
         ))}
-        <VerticalTimelineElement iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }} icon={<StarIcon alt="Star Icon" />} />
+        <VerticalTimelineElement icon={<StarIcon alt="Star Icon" />} iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }} />
       </VerticalTimeline>
     </>
   );

@@ -1,4 +1,3 @@
-/* eslint-disable unicorn/prevent-abbreviations */
 export enum SkillCategories {
   Backend = "Backend",
   CloudAndDevOps = "Cloud & DevOps",
@@ -8,24 +7,24 @@ export enum SkillCategories {
 }
 
 export interface Skill {
-  name: string;
   category: SkillCategories;
   description: string;
   icon: string;
+  name: string;
 }
 
 export interface TimelineItem {
-  timelineType: "work" | "education";
-  name: string;
-  title: string;
-  techStack: string;
-  summaryPoints: string[];
   dateRange: string;
+  name: string;
+  summaryPoints: string[];
+  techStack: string;
+  timelineType: "work" | "education";
+  title: string;
 }
 
 export interface Project {
-  title: string;
   description: string;
-  techUsed: string;
   image: string;
+  techUsed: string;
+  title: string;
 }

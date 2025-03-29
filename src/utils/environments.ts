@@ -5,25 +5,25 @@ dotenv.config();
 
 export enum DeploySites {
   GithubPages = "github",
-  Vercel = "vercel",
   Local = "local",
+  Vercel = "vercel",
 }
 
 interface EnvironmentVariables {
-  deployTarget: DeploySites;
   baseUrl: string;
+  deployTarget: DeploySites;
 }
 
 enum EnvironmentVariablesMap {
-  deployTarget = "NEXT_PUBLIC_DEPLOY_TARGET",
   baseUrl = "NEXT_PUBLIC_BASE_URL",
+  deployTarget = "NEXT_PUBLIC_DEPLOY_TARGET",
 }
 
 const environmentVariables: EnvironmentVariables = {
+  baseUrl: validateBaseUrl(process.env[EnvironmentVariablesMap.baseUrl] ?? ""),
   deployTarget: validatDeployTarget(process.env[EnvironmentVariablesMap.deployTarget] ?? "")
     ? (process.env[EnvironmentVariablesMap.deployTarget] as DeploySites)
     : DeploySites.Local,
-  baseUrl: validateBaseUrl(process.env[EnvironmentVariablesMap.baseUrl] ?? ""),
 };
 
 export default environmentVariables;

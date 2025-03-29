@@ -6,12 +6,12 @@ const Home: React.FC = () => {
     <div className="contact-container">
       <ProfileBadge />
       <div className="contact-header">
-        <p>I'm always up for a chat! Feel free to reach out.</p>
+        <p>I&apos;m always up for a chat! Feel free to reach out.</p>
       </div>
       <div className="contact-details">
         <div className="contact-item">
-          <EnvelopeIcon className="contact-icon" alt="Envelope Icon" />
-          <a href="mailto:alejandrovianalaba@gmail.com" className="contact-link">
+          <EnvelopeIcon alt="Envelope Icon" className="contact-icon" />
+          <a className="contact-link" href="mailto:alejandrovianalaba@gmail.com">
             alejandrovianalaba@gmail.com
           </a>
         </div>

@@ -7,9 +7,9 @@ const description = `An online portfolio website created by ${name}, open source
 export const url = environmentVariables.baseUrl;
 
 export const defaultMetadata: Metadata = {
-  metadataBase: new URL(url),
-  title: { default: title, template: "%s | Alejandro Viana" },
   description,
-  openGraph: { title, description, url, siteName: name, images: [{ url: `${url}/portfolio.webp` }], type: "website" },
-  robots: { index: true, follow: true },
+  metadataBase: new URL(url),
+  openGraph: { description, images: [{ url: `${url}/portfolio.webp` }], siteName: name, title, type: "website", url },
+  robots: { follow: true, index: true },
+  title: { default: title, template: "%s | Alejandro Viana" },
 };

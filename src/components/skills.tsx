@@ -1,4 +1,3 @@
-/* eslint-disable unicorn/prefer-spread */
 "use client";
 
 import React, { JSX, useEffect, useState } from "react";
@@ -25,22 +24,22 @@ import {
 } from "@/images/icons/skills/index";
 
 const iconMap: Record<string, JSX.Element> = {
-  aws: <AwsIcon alt="AWS Icon" />,
-  test: <TestIcon alt="Test Icon" />,
-  node: <NodeJsIcon alt="Node Icon" />,
-  react: <ReactIcon alt="React Icon" />,
-  mysql: <MySQLIcon alt="MySQL Icon" />,
-  website: <WebsiteIcon alt="Website Icon" />,
-  docker: <DockerIcon alt="Docker Icon" />,
   appium: <AppiumIcon alt="Appium Icon" />,
+  aws: <AwsIcon alt="AWS Icon" />,
+  docker: <DockerIcon alt="Docker Icon" />,
   github: <GithubIcon alt="Github Icon" />,
   gitlab: <GitlabIcon alt="Gitlab Icon" />,
-  nextjs: <NextJsIcon alt="NextJs Icon" />,
-  python: <PythonIcon alt="Python Icon" />,
-  prisma: <PrismaIcon alt="Prisma Icon" />,
   javascript: <JavascriptIcon alt="Javascript Icon" />,
-  typescript: <TypescriptIcon alt="Typescript Icon" />,
+  mysql: <MySQLIcon alt="MySQL Icon" />,
+  nextjs: <NextJsIcon alt="NextJs Icon" />,
+  node: <NodeJsIcon alt="Node Icon" />,
   postgresql: <PostgreSQLIcon alt="PostgreSQL Icon" />,
+  prisma: <PrismaIcon alt="Prisma Icon" />,
+  python: <PythonIcon alt="Python Icon" />,
+  react: <ReactIcon alt="React Icon" />,
+  test: <TestIcon alt="Test Icon" />,
+  typescript: <TypescriptIcon alt="Typescript Icon" />,
+  website: <WebsiteIcon alt="Website Icon" />,
 };
 
 const Skills: React.FC = () => {
@@ -55,7 +54,9 @@ const Skills: React.FC = () => {
     fetchSkills();
   }, []);
 
-  if (skillsData.length === 0) return <div>Loading...</div>;
+  if (skillsData.length === 0) {
+    return <div>Loading...</div>;
+  }
 
   const skillsByCategory: Record<string, Skill[]> = {};
   for (const skill of skillsData) {
@@ -65,15 +66,15 @@ const Skills: React.FC = () => {
   return (
     <div className="skills-container">
       {Object.keys(skillsByCategory).map((category, index) => (
-        <div key={index} className="skill-category">
+        <div className="skill-category" key={index}>
           <h3 className="category-title">{category}</h3>
           <div className="skills-grid">
             {skillsByCategory[category].map((skill, index_: number) => (
-              <div key={index_} className="skill-card">
+              <div className="skill-card" key={index_}>
                 <div className="icon">{iconMap[skill.icon]}</div>
                 <h3 className="skill-name">
-                  {skill.name.split("").map((letter: any, index__: number) => (
-                    <span key={index__} className="letter" style={{ animationDelay: `${index__ * 0.05}s` }}>
+                  {skill.name.split("").map((letter: string, index__: number) => (
+                    <span className="letter" key={index__} style={{ animationDelay: `${index__ * 0.05}s` }}>
                       {letter}
                     </span>
                   ))}

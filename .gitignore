@@ -1,6 +1,7 @@
 .env
 /node_modules
 .next/
+.eslintcache
 out/
 dist
 *.tsbuildinfo

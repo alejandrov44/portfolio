@@ -1,4 +1,3 @@
-
 interface DownloadIconProperties {
   alt: string;
   className?: string;
@@ -7,14 +6,14 @@ interface DownloadIconProperties {
 const DownloadIcon = ({ alt, className = "" }: DownloadIconProperties) => {
   return (
     <svg
-      viewBox="0 0 24 24"
+      aria-label={alt}
+      className={className}
       fill="none"
       height="1.5em"
-      width="1.5em"
       strokeWidth="0"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-label={alt}
-      className={className}>
+      viewBox="0 0 24 24"
+      width="1.5em"
+      xmlns="http://www.w3.org/2000/svg">
       <path
         d="M14.0315 13.1643C14.355 12.9056 14.8269 12.958 15.0857 13.2815C15.3444 13.6049 15.292 14.0769 14.9685 14.3357L12.4746 16.3308C12.3459 16.4361 12.1816 16.4994 12.0025 16.5L12.0001 16.5L11.9937 16.5C11.8177 16.4985 11.6561 16.4364 11.5288 16.3335L9.03151 14.3357C8.70806 14.0769 8.65562 13.6049 8.91438 13.2815C9.17313 12.958 9.6451 12.9056 9.96855 13.1643L11.2501 14.1896V10.75C11.2501 10.3358 11.5858 10 12.0001 10C12.4143 10 12.7501 10.3358 12.7501 10.75V14.1895L14.0315 13.1643Z"
         fill="#000000"></path>
