@@ -12,7 +12,6 @@
   },
   "license": "MIT",
   "author": "alejandrov44",
-  "type": "module",
   "main": "index.ts",
   "scripts": {
     "build": "next build",
